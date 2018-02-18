@@ -1,0 +1,367 @@
+[
+{
+				"id" : 11,
+				"tag-id" : "movie-download-site",
+				"btn-text" : "",
+				"img-list" : [
+						"public/img/pfolio/movie_download_site/1.png",
+						"public/img/pfolio/movie_download_site/2.png",
+						"public/img/pfolio/movie_download_site/3.png",
+						"public/img/pfolio/movie_download_site/4.png",
+						"public/img/pfolio/movie_download_site/5.png",
+						"public/img/pfolio/movie_download_site/6.png",
+						"public/img/pfolio/movie_download_site/7.png"
+				],
+				"title" : "Movie Download Site",
+				"subtext" : "(SOLO)",
+				"description" : "I renamed the site for the anonimity of the client as it's in the gray area, every transaction made in bitcoin. I use laravel 5.6 here, it has a cms site, it generate links that may earn bitcoin via traffic.",
+				"date-added" : "2018-01-01"
+	},
+	{
+				"id" : 10,
+				"tag-id" : "project-wifi",
+				"btn-text" : "",
+				"img-list" : [
+						"public/img/pfolio/gowifi/1.png"
+				],
+				"title" : "Project Wifi",
+				"subtext" : "(TEAM)",
+				"description" : "Captive Portal for Konekt,Gowifi. It gives internet to the user(s) via wifi. They are usually installed in malls, mrt station(s), airport or any public place for public use.",
+				"date-added" : "2016-09-05"
+	},
+	{
+				"id" : 9,
+				"tag-id" : "ipp-payment-gateway",
+				"img-list" : [
+						"public/img/pfolio/ipp_gateway/1.jpg",
+
+						"public/img/pfolio/ipp_gateway/2.jpg",
+
+						"public/img/pfolio/ipp_gateway/3.jpg",
+
+						"public/img/pfolio/ipp_gateway/4.jpg",
+
+						"public/img/pfolio/ipp_gateway/5.jpg",
+
+						"public/img/pfolio/ipp_gateway/6.jpg",
+
+						"public/img/pfolio/ipp_gateway/7.jpg",
+
+						"public/img/pfolio/ipp_gateway/8.jpg",
+
+						"public/img/pfolio/ipp_gateway/9.jpg",
+
+						"public/img/pfolio/ipp_gateway/10.jpg",
+
+						"public/img/pfolio/ipp_gateway/7.jpg"
+					],
+				"title" : "IPP Payment gateway",
+
+				"subtext" : "(TEAM)",
+
+				"description" : "Payment Gateway that allow(s) online merchant to transfer the payment from their customer to their bank account(s). It involves Accounting System, CRM for Merchant(s) , CRM for Staff(s) , XMLAPI - (Integrated in JETPAY | TRUSTSPAY PROCESSOR)",
+
+				"date-added" : "2016-05-24"
+	},
+	{
+				"id" : 8,
+				"tag-id" : "vistaland-tracker",
+				"img" : "images/pfolio/vistaland/front.jpg",
+
+				"img-list" : [
+
+						"public/img/pfolio/vistaland/1.jpg",
+
+						"public/img/pfolio/vistaland/2.jpg",
+
+						"public/img/pfolio/vistaland/3.jpg",
+
+						"public/img/pfolio/vistaland/4.jpg",
+
+						"public/img/pfolio/vistaland/5.jpg",
+
+						"public/img/pfolio/vistaland/6.jpg",
+
+						"public/img/pfolio/vistaland/7.jpg",
+
+						"public/img/pfolio/vistaland/8.jpg",
+
+						"public/img/pfolio/vistaland/9.jpg",
+
+						"public/img/pfolio/vistaland/10.jpg",
+
+						"public/img/pfolio/vistaland/11.jpg",
+
+						"public/img/pfolio/vistaland/12.jpg",
+
+						"public/img/pfolio/vistaland/13.jpg",
+
+						"public/img/pfolio/vistaland/14.jpg"
+					],
+				"title" : "Vistaland Tracker",
+				"subtext" : "(SOLO)",
+				"description" : "It allows vistaland agent to log caller(s) in which have an interest in buying property and distinct it with a corresponding status with a tracking capabilities.",
+
+				"date-added" : "2015-09-13"
+	},
+	{
+				"id" : 7,
+				"tag-id" : "pwebex-pluto-web-explorer",
+				"img" : "images/pfolio/pwebex/front.jpg",
+				"img-list" : [
+						"public/img/pfolio/pwebex/2.jpg",
+
+						"public/img/pfolio/pwebex/3.jpg",
+
+						"public/img/pfolio/pwebex/4.jpg",
+
+						"public/img/pfolio/pwebex/5.jpg"
+
+					],
+				"title" : "PWEBEX - Pluto Web Explorer",
+				"subtext" : "(SOLO)",
+				"description" : "Webbased FTP without ftp account(s). Where you can upload,rename, download , delete file & delete, rename, remove directory in your ftp host/server.",
+				"date-added" : "2015-06-07"
+	},
+	{
+				"id" : 6,
+				"tag-id" : "delmundo-travel-and-tours",
+				"img"  : "images/pfolio/delmundo/front.jpg",
+				"img-list" : [
+
+						"public/img/pfolio/delmundo/1.jpg",
+
+						"public/img/pfolio/delmundo/2.jpg",
+
+						"public/img/pfolio/delmundo/3.jpg",
+
+						"public/img/pfolio/delmundo/4.jpg",
+
+						"public/img/pfolio/delmundo/5.jpg",
+
+						"public/img/pfolio/delmundo/6.jpg",
+
+						"public/img/pfolio/delmundo/7.jpg",
+
+						"public/img/pfolio/delmundo/8.jpg",
+
+						"public/img/pfolio/delmundo/9.jpg",
+
+						"public/img/pfolio/delmundo/10.jpg",
+
+						"public/img/pfolio/delmundo/11.jpg",
+
+						"public/img/pfolio/delmundo/12.jpg",
+
+						"public/img/pfolio/delmundo/13.jpg",
+
+						"public/img/pfolio/delmundo/14.jpg"
+
+					],
+
+				"title" : "Delmundo Travel & Tours",
+				"subtext" : "(SOLO)",
+				"description" : "A Travel & Tours (Modified Wordpress theme). It has a cart system with integrated Paypal payment. It has a customizer where they can modify/remove data (Tourpackages, Daytours). ",
+				"date-added" : "2016-03-15"
+
+	},
+	{
+				"id" : 5,
+				"tag-id" : "mlgtours",
+				"img" : "images/pfolio/mlgtours/front.jpg",
+				"img-list" : [
+
+						"public/img/pfolio/mlgtours/1.jpg",
+
+						"public/img/pfolio/mlgtours/2.jpg",
+
+						"public/img/pfolio/mlgtours/3.jpg",
+
+						"public/img/pfolio/mlgtours/4.jpg",
+
+						"public/img/pfolio/mlgtours/5.jpg",
+
+						"public/img/pfolio/mlgtours/6.jpg"
+					],
+
+				"title" : "MLG Tours & Travel",
+
+				"subtext" : "(SOLO)",
+
+				"description" : "A Travel & Tours (Modified Wordpress theme). It has a cart system with integrated Paypal payment.",
+
+				"date-added" : "2016-01-05"
+	},
+	{
+				"id" : 4,
+				"tag-id" : "citadel-bed-and-breakfast",
+				"img" : "images/pfolio/citadel/front.jpg",
+				"img-list" : [
+						"public/img/pfolio/citadel/1.jpg",
+
+						"public/img/pfolio/citadel/2.jpg",
+
+						"public/img/pfolio/citadel/3.jpg",
+
+						"public/img/pfolio/citadel/4.jpg",
+
+						"public/img/pfolio/citadel/5.jpg",
+
+						"public/img/pfolio/citadel/6.jpg",
+
+						"public/img/pfolio/citadel/7.jpg",
+
+						"public/img/pfolio/citadel/8.jpg",
+
+						"public/img/pfolio/citadel/9.jpg",
+
+						"public/img/pfolio/citadel/10.jpg",
+
+						"public/img/pfolio/citadel/11.jpg",
+
+						"public/img/pfolio/citadel/12.jpg",
+
+						"public/img/pfolio/citadel/13.jpg",
+
+						"public/img/pfolio/citadel/14.jpg",
+
+						"public/img/pfolio/citadel/15.jpg",
+
+						"public/img/pfolio/citadel/16.jpg",
+
+						"public/img/pfolio/citadel/17.jpg",
+
+						"public/img/pfolio/citadel/18.jpg",
+
+						"public/img/pfolio/citadel/19.jpg"
+					],
+
+				"title" : "Citadel Bed & Breakfast",
+
+				"subtext" : "(SOLO)",
+
+				"description" : "A Bed & Breakfast where information about the institution is shown.Customer can also reserve a room in realtime as it has a online reservation system with cart & the administrator can manage everything about his room(s). Payment is integrated via Paypal & Migs Payment gateway.",
+
+				"date-added" : "2013-01-07"
+
+	},
+	{
+				"id" : 3,
+				"tag-id" : "ippchat",
+				"img" : "images/pfolio/ippchat/front.jpg",
+				"img-list" : [
+
+						"public/img/pfolio/ippchat/1.jpg",
+
+						"public/img/pfolio/ippchat/2.jpg",
+
+						"public/img/pfolio/ippchat/3.jpg",
+
+						"public/img/pfolio/ippchat/4.jpg",
+
+						"public/img/pfolio/ippchat/5.jpg",
+
+						"public/img/pfolio/ippchat/6.jpg",
+
+						"public/img/pfolio/ippchat/7.jpg",
+
+						"public/img/pfolio/ippchat/8.jpg",
+
+						"public/img/pfolio/ippchat/9.jpg",
+
+						"public/img/pfolio/ippchat/10.jpg",
+
+						"public/img/pfolio/ippchat/11.jpg",
+
+						"public/img/pfolio/ippchat/12.jpg",
+
+						"public/img/pfolio/ippchat/13.jpg",
+
+						"public/img/pfolio/ippchat/14.jpg",
+
+						"public/img/pfolio/ippchat/15.jpg",
+
+						"public/img/pfolio/ippchat/16.jpg",
+
+						"public/img/pfolio/ippchat/17.jpg",
+
+						"public/img/pfolio/ippchat/18.jpg",
+
+						"public/img/pfolio/ippchat/19.jpg",
+
+						"public/img/pfolio/ippchat/20.jpg"
+
+					],
+
+				"title"  :  "IPP Chat",
+				"subtext"  : "(SOLO)",
+				"description"  : "Chat with user(s) depending on their AccountType, Join group and chat with them. (Bootstrap Theme) ",
+				"date-added"  : "2015-07-21"
+	},
+	{
+				"id" : 2,
+				"tag-id"  : "merchant-acquiring",
+				"img" : "images/pfolio/merchant_acquiring/front.jpg",
+				"img-list" : [
+
+						"public/img/pfolio/merchant_acquiring/1.jpg",
+
+						"public/img/pfolio/merchant_acquiring/2.jpg",
+
+						"public/img/pfolio/merchant_acquiring/3.jpg",
+
+						"public/img/pfolio/merchant_acquiring/4.jpg",
+
+						"public/img/pfolio/merchant_acquiring/5.jpg",
+
+						"public/img/pfolio/merchant_acquiring/6.jpg",
+
+						"public/img/pfolio/merchant_acquiring/7.jpg",
+
+						"public/img/pfolio/merchant_acquiring/8.jpg",
+
+						"public/img/pfolio/merchant_acquiring/9.jpg",
+
+						"public/img/pfolio/merchant_acquiring/10.jpg"
+
+						],
+
+				"title" : "Merchant Acquiring",
+				"subtext" : "(SOLO)",
+				"description" : "It allows users to add, edit, delete Merchant. They can also comment on each merchant added & upload files in it. They can also upload & manage file(s) in their file bucket.",
+				"date-added" : "2014-02-15"
+
+	},
+	{
+				"id" : 1,
+				"tag-id" : "online-refund",
+
+				"img" : "images/pfolio/ican/front.jpg",
+
+				"img-list" : [
+
+						"public/img/pfolio/ican/1.jpg",
+
+						"public/img/pfolio/ican/2.jpg",
+
+						"public/img/pfolio/ican/3.jpg",
+
+						"public/img/pfolio/ican/4.jpg",
+
+						"public/img/pfolio/ican/5.jpg",
+
+						"public/img/pfolio/ican/6.jpg"
+
+					],
+
+				"title" : "iCAN4Consumers - Online Refund",
+
+				"subtext" : "(TEAM)",
+
+				"description" : "It allow(s) registered merchant's customer to have a refund by using iCan4consumers. Consumer will be able to send a request of refund depending on their merchant's payment gateway.",
+
+				"date-added" : "2013-01-15"
+
+	}
+
+]
