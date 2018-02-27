@@ -53,7 +53,14 @@
 						    '</h3>',
 						    '<h5 style="font-size: 12px;color: rgba(5, 130, 17,.5);">' + ( data['is_active']==true ? '- Active -' : '' ) + '</h5>',
 					    '</div>',
-					    '<p>' + data['description'] + '</p>',
+					    '<p>',
+					   	 (function(description){
+					   	 	 if( description.length>=100 ){
+					   	 	 	description = description.substring(1,100);
+					   	 	 }
+					   	 	 return description;
+					   	 })(data['description']),
+					    '</p>',
 					    '<div style="text-align: center;">',
 					    	(function(dt){
 						        return ( (dt['is_active']==true && dt['link']!=null)  ? (
