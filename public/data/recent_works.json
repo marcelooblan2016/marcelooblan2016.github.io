@@ -15,6 +15,8 @@
 				"title" : "Movie Download Site",
 				"subtext" : "(SOLO)",
 				"description" : "I renamed the site for the anonimity of the client as it's in the gray area, every transaction made in bitcoin. I use laravel 5.6 here, it has a cms site, it generate links that may earn bitcoin via traffic.",
+				"is_active" : true,
+				"link"      : "https://www.gallicmovie.com",
 				"date-added" : "2018-01-01"
 	},
 	{
@@ -27,6 +29,8 @@
 				"title" : "Project Wifi",
 				"subtext" : "(TEAM)",
 				"description" : "Captive Portal for Konekt,Gowifi. It gives internet to the user(s) via wifi. They are usually installed in malls, mrt station(s), airport or any public place for public use.",
+				"is_active" : true,
+				"link"      : null,
 				"date-added" : "2016-09-05"
 	},
 	{
@@ -60,7 +64,8 @@
 				"subtext" : "(TEAM)",
 
 				"description" : "Payment Gateway that allow(s) online merchant to transfer the payment from their customer to their bank account(s). It involves Accounting System, CRM for Merchant(s) , CRM for Staff(s) , XMLAPI - (Integrated in JETPAY | TRUSTSPAY PROCESSOR)",
-
+				"is_active" : true,
+				"link"      : null,
 				"date-added" : "2016-05-24"
 	},
 	{
@@ -101,7 +106,8 @@
 				"title" : "Vistaland Tracker",
 				"subtext" : "(SOLO)",
 				"description" : "It allows vistaland agent to log caller(s) in which have an interest in buying property and distinct it with a corresponding status with a tracking capabilities.",
-
+				"is_active" : true,
+				"link"      : "http://vistaland.intl-payments.com/",
 				"date-added" : "2015-09-13"
 	},
 	{
@@ -121,6 +127,8 @@
 				"title" : "PWEBEX - Pluto Web Explorer",
 				"subtext" : "(SOLO)",
 				"description" : "Webbased FTP without ftp account(s). Where you can upload,rename, download , delete file & delete, rename, remove directory in your ftp host/server.",
+				"is_active" : false,
+				"link"      : null,
 				"date-added" : "2015-06-07"
 	},
 	{
@@ -162,6 +170,8 @@
 				"title" : "Delmundo Travel & Tours",
 				"subtext" : "(SOLO)",
 				"description" : "A Travel & Tours (Modified Wordpress theme). It has a cart system with integrated Paypal payment. It has a customizer where they can modify/remove data (Tourpackages, Daytours). ",
+				"is_active" : false,
+				"link"      : null,
 				"date-added" : "2016-03-15"
 
 	},
@@ -189,7 +199,8 @@
 				"subtext" : "(SOLO)",
 
 				"description" : "A Travel & Tours (Modified Wordpress theme). It has a cart system with integrated Paypal payment.",
-
+				"is_active" : true,
+				"link"      : "http://www.mlgtours.com",
 				"date-added" : "2016-01-05"
 	},
 	{
@@ -241,7 +252,8 @@
 				"subtext" : "(SOLO)",
 
 				"description" : "A Bed & Breakfast where information about the institution is shown.Customer can also reserve a room in realtime as it has a online reservation system with cart & the administrator can manage everything about his room(s). Payment is integrated via Paypal & Migs Payment gateway.",
-
+				"is_active" : true,
+				"link"      : "http://www.citadelbedandbreakfast.net",
 				"date-added" : "2013-01-07"
 
 	},
@@ -296,6 +308,8 @@
 				"title"  :  "IPP Chat",
 				"subtext"  : "(SOLO)",
 				"description"  : "Chat with user(s) depending on their AccountType, Join group and chat with them. (Bootstrap Theme) ",
+				"is_active" : true,
+				"link"      : "https://intl-payments.com/ippchat/ipp_chat_login.php",
 				"date-added"  : "2015-07-21"
 	},
 	{
@@ -329,6 +343,8 @@
 				"title" : "Merchant Acquiring",
 				"subtext" : "(SOLO)",
 				"description" : "It allows users to add, edit, delete Merchant. They can also comment on each merchant added & upload files in it. They can also upload & manage file(s) in their file bucket.",
+				"is_active" : true,
+				"link"      : null,
 				"date-added" : "2014-02-15"
 
 	},
@@ -359,7 +375,8 @@
 				"subtext" : "(TEAM)",
 
 				"description" : "It allow(s) registered merchant's customer to have a refund by using iCan4consumers. Consumer will be able to send a request of refund depending on their merchant's payment gateway.",
-
+				"is_active" : true,
+				"link"      : "https://www.ican4consumers.com",
 				"date-added" : "2013-01-15"
 
 	}
