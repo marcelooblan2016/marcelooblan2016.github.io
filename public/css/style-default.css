@@ -286,11 +286,13 @@ nav.navbar .navbar-brand {
   font-weight: 800;
   font-size: 1.7rem;
   color: #222; }
-
+nav.navbar a, nav.navbar a.nav-link{
+     font-family: "Cuprum", sans-serif;
+}
 nav.navbar a.nav-link {
   color: #333;
   font-size: 1.1rem; 
-    font-family: "Cuprum", sans-serif;
+ 
 }
 
 nav.navbar a.nav-link:hover, nav.navbar a.nav-link.active {
