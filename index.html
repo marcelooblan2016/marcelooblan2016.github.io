@@ -27,7 +27,14 @@
     <!-- Favicon-->
 	
 	<body id="top" data-spy="scroll">
-
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.12&appId=771616289676198&autoLogAppEvents=1';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- navbar-->
     <header class="header">
@@ -90,6 +97,7 @@
     						color: rgba(0,0,0,.7);
     						line-height: 35px;
     						">
+    						<div class="fb-send" data-href="https://web.facebook.com/Mr.AllTimeHigh"></div>
 		          	Hi Guys, First of all my name is Marcelo Oblan III though you can call me Marx :) and im a freelance web developer for more than 5 years. I have been in many projects from simple to complex and still I have this strong urge to learn more & more...
 		          </p>
 		        </div>
