@@ -34,7 +34,7 @@
 			var count = 0;
 			$.each( datas,function(key,data){
 				if( typeof data['hide']!='undefined' ){
-					break 1;
+					return true;
 				}
 				var img_list = data['img-list'];
 				$.each( img_list, function(key,img_url){
