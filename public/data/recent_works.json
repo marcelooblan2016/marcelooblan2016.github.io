@@ -20,6 +20,7 @@
 				"date-added" : "2018-01-01"
 	},
 	{
+				"hide" : 1,
 				"id" : 10,
 				"tag-id" : "project-wifi",
 				"btn-text" : "",

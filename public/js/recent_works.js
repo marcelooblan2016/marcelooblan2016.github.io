@@ -33,7 +33,9 @@
 			var limit = typeof options['limit'] ? parseInt(options['limit']) : 0;
 			var count = 0;
 			$.each( datas,function(key,data){
-
+				if( typeof data['hide']!='undefined' ){
+					break 1;
+				}
 				var img_list = data['img-list'];
 				$.each( img_list, function(key,img_url){
 					img_list[key] = __self.base_url + "/" + img_url; 
