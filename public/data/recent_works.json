@@ -1,5 +1,26 @@
 [
-{
+	{
+				"id" : 12,
+				"tag-id" : "morningfetch",
+				"subtext" : "(SOLO)",
+				"btn-text" : "",
+				"img-list" : [
+						"public/img/pfolio/morningfetch/1.png",
+						"public/img/pfolio/morningfetch/2.png",
+						"public/img/pfolio/morningfetch/3.png",
+						"public/img/pfolio/morningfetch/4.png",
+						"public/img/pfolio/morningfetch/5.png",
+						"public/img/pfolio/morningfetch/6.png",
+						"public/img/pfolio/morningfetch/7.png"
+				],
+				"title" : "Morningfetch.com",
+				"subtext" : "(SOLO)",
+				"description" : "A wordpress (mobile responsive) website, create/modify plugins , customized themes. A website that will provide entertainment & knowledge.",
+				"is_active" : true,
+				"link"      : "http://www.morningfetch.com",
+				"date-added" : "2018-05-28"
+	},
+	{
 				"id" : 11,
 				"tag-id" : "movie-download-site",
 				"btn-text" : "",
@@ -20,7 +41,7 @@
 				"date-added" : "2018-01-01"
 	},
 	{
-				"hide" : 1,
+				"hide" : true,
 				"id" : 10,
 				"tag-id" : "project-wifi",
 				"btn-text" : "",
