@@ -1,6 +1,7 @@
 [
+
 	{
-				"id" : 12,
+				"id" : 13,
 				"tag-id" : "morningfetch",
 				"subtext" : "(SOLO)",
 				"btn-text" : "",
@@ -19,6 +20,25 @@
 				"is_active" : true,
 				"link"      : "http://www.morningfetch.com",
 				"date-added" : "2018-05-28"
+	},
+	{
+				"id" : 12,
+				"tag-id" : "the-awesome-agency",
+				"subtext" : "(SOLO)",
+				"btn-text" : "",
+				"img-list" : [
+						"public/img/pfolio/theawesomeagency/1.png",
+						"public/img/pfolio/theawesomeagency/2.png",
+						"public/img/pfolio/theawesomeagency/3.png",
+						"public/img/pfolio/theawesomeagency/4.png",
+						"public/img/pfolio/theawesomeagency/5.png"
+				],
+				"title" : "theAwesomeAgency.com",
+				"subtext" : "(SOLO)",
+				"description" : "A static responsive single page website that provides some information about an agency and their service.",
+				"is_active" : true,
+				"link"      : "https://theawesomeagency.com/",
+				"date-added" : "2018-05-05"
 	},
 	{
 				"id" : 11,
