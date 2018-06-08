@@ -273,9 +273,9 @@
 							var data_recent_work = JSON.parse( decodeURIComponent( $(this).data('recentwork') ) );
 							// var portfolio = new portfolio({});
 							portfolio().show_details(data_recent_work);
-							// onImgLoad('.img-hasload img', function(){
-							// 	$(this).parent().addClass("loaded");
-							// }); //IMAGE LOADING...
+							onImgLoad('.img-hasload img', function(){
+								$(this).parent().addClass("loaded");
+							}); //IMAGE LOADING...
 						}
 					});
 				}
