@@ -47,7 +47,7 @@
 				html_value+= [
 					'<div class="item col-lg-4 col-md-6">',
 						'<div class="icon">',
-					       '<img class="img-responsive" src="'+ (typeof img_list[0] ? img_list[0] : '') +'"  style="width:100%;height: auto;border-radius: 5px;">',
+					       '<img class="img-responsive img-hasload" src="'+ (typeof img_list[0] ? img_list[0] : '') +'"  style="width:100%;height: auto;border-radius: 5px;">',
 					    '</div>',
 					    '<div style="background:rgba(255,255,255,.3);padding:10px;border-radius:3px;border:solid 1px rgba(255,255,255,.3);">',
 						    '<h3 class="h5">',

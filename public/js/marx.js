@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	
+	//img-hasload loaded
+	onImgLoad('.img-hasload', function(){$(this).addClass("loaded");}); //IMAGE LOADING...
+
 
 	$('#contact-form').on('shown.bs.modal', function (e) {
   // do something here...
@@ -112,3 +114,13 @@ $(document).ready(function(){
 		}
 	})
 });
+var onImgLoad = function(selector, callback){
+	$(selector).each(function(){
+		if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
+		    callback.apply(this);
+		}
+		else {
+		      $(this).on('load', function(){callback.apply(this);});
+		}
+	});
+};
