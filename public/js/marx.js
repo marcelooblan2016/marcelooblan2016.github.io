@@ -1,8 +1,5 @@
 $(document).ready(function(){
 	//img-hasload loaded
-	onImgLoad('.img-hasload', function(){$(this).addClass("loaded");}); //IMAGE LOADING...
-
-
 	$('#contact-form').on('shown.bs.modal', function (e) {
   // do something here...
   		if( typeof grecaptcha !='undefined' ){
@@ -115,6 +112,7 @@ $(document).ready(function(){
 	})
 });
 var onImgLoad = function(selector, callback){
+	console.log($(selector).length);
 	$(selector).each(function(){
 		if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
 		    callback.apply(this);

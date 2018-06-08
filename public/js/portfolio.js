@@ -17,7 +17,9 @@ function portfolio(options){
 					carousel_inner.append('<div class="carousel-item"></div>');
 					var carousel_item = carousel_inner.find(".carousel-item:last-child");
 					carousel_item.html( [
-							'<img class="d-block img-fluid mg-hasload" src="' + img_url + '" >',
+							'<div class="img-hasload">',
+								'<img class="d-block img-fluid" src="' + img_url + '" >',
+							'</div>',
 						].join("") );
 					carousel_item.find("img").css({
 						"margin" : "0 auto",

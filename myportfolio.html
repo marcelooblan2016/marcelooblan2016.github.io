@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="//marcelooblan2016.github.io/public/carousel/owl.theme.default.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" type="text/css" href="//marcelooblan2016.github.io/public/css/style-default.css" id="theme-stylesheet">
+
     <!-- Custom stylesheet - for your changes-->
 
     <!-- Favicon-->
@@ -272,7 +273,9 @@
 							var data_recent_work = JSON.parse( decodeURIComponent( $(this).data('recentwork') ) );
 							// var portfolio = new portfolio({});
 							portfolio().show_details(data_recent_work);
-							
+							onImgLoad('.img-hasload img', function(){
+								$(this).parent().addClass("loaded");
+							}); //IMAGE LOADING...
 						}
 					});
 				}
