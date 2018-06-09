@@ -55,7 +55,7 @@
 				],
 				"title" : "Movie Download Site",
 				"subtext" : "(SOLO)",
-				"description" : "I renamed the site for the anonimity of the client as it's in the gray area, every transaction made in bitcoin. I use laravel 5.6 here, it has a cms site, it generate links that may earn bitcoin via traffic.",
+				"description" : "I renamed the site for the anonimity of the client as it's in the gray area, every transaction made in bitcoin. I use laravel 5.4 here, it has a cms site, it generate links that may earn bitcoin via traffic.",
 				"is_active" : true,
 				"link"      : null,
 				"date-added" : "2018-01-01"
