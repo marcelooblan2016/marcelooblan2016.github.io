@@ -59,7 +59,7 @@
 				"title" : "Morningfetch.com",
 				"description" : "A wordpress (mobile responsive) website, create/modify plugins , customized themes. A website that will provide entertainment & knowledge.",
 				"is_active" : true,
-				"link"      : "http://www.morningfetch.com",
+				"link"      : "https://www.morningfetch.com",
 				"date-added" : "2018-05-28"
 	},
 	{
@@ -233,7 +233,7 @@
 				"subtext" : "(SOLO)",
 				"description" : "It allows vistaland agent to log caller(s) in which have an interest in buying property and distinct it with a corresponding status with a tracking capabilities.",
 				"is_active" : true,
-				"link"      : "http://vistaland.intl-payments.com/",
+				"link"      : "https://vistaland.intl-payments.com/",
 				"date-added" : "2015-09-13"
 	},
 	{
@@ -349,7 +349,7 @@
 
 				"description" : "A Travel & Tours (Modified Wordpress theme). It has a cart system with integrated Paypal payment.",
 				"is_active" : true,
-				"link"      : "http://www.mlgtours.com",
+				"link"      : "https://www.mlgtours.com",
 				"date-added" : "2016-01-05"
 	},
 	{
@@ -410,7 +410,7 @@
 
 				"description" : "A Bed & Breakfast where information about the institution is shown.Customer can also reserve a room in realtime as it has a online reservation system with cart & the administrator can manage everything about his room(s). Payment is integrated via Paypal & Migs Payment gateway.",
 				"is_active" : true,
-				"link"      : "http://www.citadelbedandbreakfast.net",
+				"link"      : "https://www.citadelbedandbreakfast.net",
 				"date-added" : "2013-01-07"
 
 	},

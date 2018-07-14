@@ -2,7 +2,7 @@
  * YoutubeBackground - A wrapper for the Youtube API - Great for fullscreen background videos or just regular videos.
  *
  * Licensed under the MIT license:
- *   http://www.opensource.org/licenses/mit-license.php
+ *   https://www.opensource.org/licenses/mit-license.php
  *
  *
  * Version:  1.0.5
@@ -27,7 +27,7 @@ if (typeof Object.create !== "function") {
       head = document.getElementsByTagName('head')[0];
       
       if(window.location.origin == 'file://') {
-        tag.src = 'http://www.youtube.com/iframe_api';
+        tag.src = 'https://www.youtube.com/iframe_api';
       } else {
         tag.src = '//www.youtube.com/iframe_api';
       }
