@@ -10,7 +10,9 @@
 				url: __self.data_url,
 				type: "GET",
 				data: {},
-				error: function(x,t,r){},
+				error: function(x,t,r){
+					console.log( x + " " + t + " " + r);
+				},
 				beforeSend: function(){
 					var div_str  = [
 						"<div style='display:block;width:100%;min-height:300px;background: url(\""+ __self.base_url +"/public/img/loading.gif\") rgba(255,255,255,.3) center no-repeat;opacity:.7;border-radius:5px;'>",
@@ -57,6 +59,17 @@
 						    	data['title'],
 						    '</h3>',
 						    '<h5 style="font-size: 12px;color: rgba(5, 130, 17,.5);">' + ( data['is_active']==true ? '- Active -' : '' ) + '</h5>',
+						    (function(skills){
+						    	var skill_value ='';
+						    	$.each(skills, function(index, value){
+						    		skill_value+='<span class="tag tag-primary">' + value + '</span>';
+						    	});
+						    	return [
+						    		"<p>",
+						    			skill_value,
+						    		"</p>"
+						    	].join("");
+						    })(data['skills']),
 					    '</div>',
 					    '<p style="text-align: left;">',
 						   	 (function(description){
