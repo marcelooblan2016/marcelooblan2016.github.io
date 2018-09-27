@@ -1,6 +1,23 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  $(document).ready(function(){
+
+        $('#work-details').on('shown.bs.modal', function (e) {
+
+              onImgLoad( $('#work-details').find('.img-hasload img'), function(){
+                    $(this).parent().addClass("loaded");
+            });
+              
+        })
+
+        onImgLoad('.img-hasload img', function(){
+                $(this).parent().addClass("loaded");
+        });
+
+  });
+
+
   var onImgLoad = function(selector, callback){
     console.log($(selector).length);
     $(selector).each(function(){
