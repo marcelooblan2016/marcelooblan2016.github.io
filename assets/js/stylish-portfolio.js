@@ -1,6 +1,19 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  var onImgLoad = function(selector, callback){
+    console.log($(selector).length);
+    $(selector).each(function(){
+      if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
+          callback.apply(this);
+      }
+      else {
+            $(this).on('load', function(){callback.apply(this);});
+      }
+    });
+  };
+
+
   // Closes the sidebar menu
   $(".menu-toggle").click(function(e) {
     e.preventDefault();
