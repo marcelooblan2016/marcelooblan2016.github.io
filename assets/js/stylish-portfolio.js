@@ -3,14 +3,6 @@
 
   $(document).ready(function(){
 
-        $('#work-details').on('shown.bs.modal', function (e) {
-
-              onImgLoad( $('#work-details').find('.img-hasload img'), function(){
-                    $(this).parent().addClass("loaded");
-            });
-              
-        })
-
         onImgLoad('.img-hasload img', function(){
                 $(this).parent().addClass("loaded");
         });
