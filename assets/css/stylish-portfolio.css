@@ -475,7 +475,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   position: absolute;
   bottom: 10px;
   right: 10px;
-  background: url('//marcelooblan2016.github.io/public/img/marxlogo1.png') no-repeat center;
+  background: url('//marcelooblan2016.github.io/assets/img/marxlogo1.png') no-repeat center;
   display: block;
   width: 100px;
   height: 100px;
@@ -500,8 +500,10 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 .img-hasload{
         position: relative;
+
 }
 .img-hasload:before{
+
     content: "";
     position: absolute;
     display: block;

@@ -1,24 +1,29 @@
 (function($) {
   "use strict"; // Start of use strict
 
-  // $(document).ready(function(){
+  $(document).ready(function(){
 
-        
+        onImgLoad();
+        window.setInterval( onImgLoad, 3000 ); //Checkking image every 3 sec
 
-  // });
+  });
 
 
-  // var onImgLoad = function(selector, callback){
-  //   console.log($(selector).length);
-  //   $(selector).each(function(){
-  //     if (this.complete || /*for IE 10-*/ $(this).height() > 0) {
-  //         callback.apply(this);
-  //     }
-  //     else {
-  //           $(this).on('load', function(){callback.apply(this);});
-  //     }
-  //   });
-  // };
+  var onImgLoad = function(){
+            var selector_obj = $(".img-hasload img");
+                    if( selector_obj.length>=1 ){
+                        selector_obj.each(function(){
+                            var img = new Image($(this));
+                            var current_img = $(this);
+                            img.src = current_img.attr("src");
+                            // console.log( img.complete + " -- " +  img.naturalHeight );
+                           if( img.complete && img.naturalHeight !== 0 ){
+                                // current_img.parent().removeClass("img-hasload");
+                                current_img.parent().addClass("loaded");
+                           }
+                        })
+                    }
+  };
 
 
   // Closes the sidebar menu
@@ -42,6 +47,15 @@
       }
     }
   });
+  $("a.a-page-top").bind({
+    click: function(){
+        var page_top = $(this).attr("href");
+        $('html, body').animate({
+          scrollTop: $(page_top).offset().top
+        }, 1000, "easeInOutExpo");
+        return false;
+    }
+  })
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('#sidebar-wrapper .js-scroll-trigger').click(function() {
