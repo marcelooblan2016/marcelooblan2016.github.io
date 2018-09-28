@@ -498,7 +498,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
   background: url('../img/qr/email.png') center no-repeat;
 }
 
-/*.img-hasload{
+.img-hasload{
         position: relative;
 }
 .img-hasload:before{
@@ -534,4 +534,4 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 .img-hasload.loaded:before{
     opacity: 0;
     content: none;
-}*/
+}
