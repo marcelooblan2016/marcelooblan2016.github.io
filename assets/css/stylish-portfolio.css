@@ -122,6 +122,9 @@ background: linear-gradient(to right, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, F
    /*background: rgba(0, 0, 0, .6);*/
    content: "";
    display: block;
+    background: url(../img/parallax/parallax-bg.jpg) fixed;
+    background-size: cover;
+    opacity: .3;
 }
 
 .masthead h1 {
@@ -442,20 +445,69 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
     background:  url(../img/parallax/human.png) no-repeat;
     background-position: 100% 250px;
-    opacity: .8;
+    opacity: .7;
+    z-index: 2;
 }
 .parallax-second{
+     opacity: .94;
     position: absolute;
     display: block;
     width: 500px;
     height: 900px;
     top: 0px;
-    left: 0px;
+    left: 200px;
     background: rgba(255, 255, 255,.5) url(../img/parallax/php-laravel.png) no-repeat;
-   /* background-size: cover;*/
-    transform: rotate(5deg);
+    transform: rotate(8deg);
+    z-index: 3;
 }
+.parallax-third{
+     opacity: .92;
+    position: absolute;
+    display: block;
+    bottom: -100px;
+    left: 0px;
+    width: 500px;
+    height: 100%;
+    background:  url(../img/parallax/nuxtjs.png) no-repeat;
+    transform: rotate(-5deg);
+    z-index: 1;
+/*    transition: transform .1s ease;
+    -webkit-transition: transform .1s ease;
+    -o-transition: transform .1s ease;
+    -moz-transition: transform .1s ease;
+    -ms-transition: transform .1s ease;*/
+}
+.parallax-second, .parallax-third{
 
+    border: solid 1px  rgba(0, 0, 0,.1);
+}
+@media (max-width: 1440px) and (min-height: 900px) {
+    .parallax-first{
+       background-position: 100% 350px;
+    }
+    .parallax-second{
+        width: 600px;
+        top: auto;
+        bottom: -350px;
+    }
+    .parallax-third{
+        bottom: -350px;
+    }
+}
+@media (max-width: 1024px){
+    .masthead:after{
+        opacity: .9;
+    }
+    .masthead{
+        background: rgba(0,0,0,.9);
+    }
+    .website-quote{
+        min-height: 250px;
+    }
+    .parallax-second, .parallax-third, .parallax-first{
+        display: none;
+    }
+}
 /* PARALLAX */
 .loading{
   position: relative;
