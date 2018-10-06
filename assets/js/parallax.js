@@ -27,8 +27,8 @@ var Parallax = function(options){
 
                     });
                 }
-
-                if( goomrx.length>=1 ){
+                var window_width = $(window).width();
+                if( goomrx.length>=1 && window_width>768 ){
                     goomrx.css({
                         "transform" : 'translateY(' + windowScroll/9 + '%)',
                     });
