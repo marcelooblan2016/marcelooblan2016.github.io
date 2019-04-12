@@ -554,7 +554,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
 
 .img-hasload{
         position: relative;
-
+        z-index: 10000;
 }
 .img-hasload:before{
 
@@ -568,7 +568,7 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     width: 100%;
     height: 100%;
     opacity: 1;
-    
+    z-index: 10000;
     background: linear-gradient(90deg, transparent 6%, rgba(255,255,255,.9) 52%, transparent 96%);
     background: -webkit-linear-gradient(90deg, transparent 6%, rgba(255,255,255,.9) 52%, transparent 96%);
     background: -o-gradient(90deg, transparent 6%, rgba(255,255,255,.9) 52%, transparent 96%);
@@ -585,7 +585,8 @@ background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+
     -moz-transition: opacity 5s ease;
     -ms-transition: opacity 5s ease;
     -o-transition: opacity 5s ease;
-
+  /*  background: red;
+*/
 }
 .img-hasload.loaded:before{
     opacity: 0;
