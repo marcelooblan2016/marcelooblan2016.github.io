@@ -18,7 +18,7 @@
   </style>
   <body class="bg-gray-900 h-auto scroll-smooth">
 	<!-- gray-900 -->
-    <div id="alpine-app" x-data="xData">
+    <div id="alpine-app" x-data="xData" x-cloak>
 	    <!-- Animations-->
 		<template x-teleport="body">
 			<ul class="circles">
@@ -31,7 +31,7 @@
 		<!-- Menu -->
 		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block border-gray-200 px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
-			    <a href="#" @click.prevent="" class="flex items-center">
+			    <a x-bind:href="libraries.safeUrl('index')"  class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
 				    <span class="text-gray-100" x-text="menu.quote"></span>
 			    </a>
@@ -54,7 +54,7 @@
 							<ul class="p-4 md:text-sm md:font-medium md:border-0 text-center menu-options">
 								  <template x-for="menu_item in menu.options">
 									<li>
-										<a x-bind:href="menu_item.href" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
+										<a x-bind:href="libraries.safeUrl(menu_item.href)" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
 									</li>
 								  </template>
 							</ul>
@@ -87,7 +87,7 @@
                                 </h1>
                                 <hr class="my-2 h-px bg-gray-300 border-0" />
                                 <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
-                                    <template x-for="skill in section_2.skills">
+                                    <template x-for="skill in skills">
                                         <div class="px-3 md:px-[2em]">
                                             <!-- Skill Type-->
                                             <h2 class="text-2xl text-left font-normal leading-normal" x-text="skill.type"></h2>
