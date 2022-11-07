@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="./assets/css/app.css" />
-	<script src="https://cdn.tailwindcss.com"></script>
+	<script src="/assets/js/tailwind.js"></script>
   </head>
   <style>
 	[x-cloak] { display: none !important; }
@@ -97,7 +97,7 @@
 								<p x-text="person.summary" class="p-5"></p>
 							</div>
 							<div class="text-center mt-[2em] md:mt-[3em] h-auto">
-								<a href="#" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border-b-4 border-red-900 hover:border-red-500 rounded block md:inline-block">
+								<a x-bind:href="libraries.safeUrl('portfolio')"class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border-b-4 border-red-900 hover:border-red-500 rounded block md:inline-block">
 									See Portfolio
 									<span class="fa fa-star-o align-middle"></span>
 								</a>
