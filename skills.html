@@ -2,7 +2,7 @@
 <html lang="en" data-n-head-ssr>
   <head>
   	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>About | Marcelo Oblan</title>
+    <title>Skills | Marcelo Oblan</title>
 	<meta data-n-head="ssr" data-hid="description" name="description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
 	<link data-n-head="ssr" rel="icon" type="rel/icon" href="/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,52 +76,41 @@
 		<div class="grid md:grid-cols-5 gap-1 text-white">
 			<div class="md:col-span-1"></div>
 			<div class="md:col-span-3 px-5 md:px-3">
-				<div class="flex md:h-screen sm:h-auto">
-                    <div class="m-auto">
-						<div class="flex flex-col justify-center items-center px-2 py-2 mt-[5em] md:mt-0">
-							<img class="w-[200px] h-auto rounded-full ring-[3px] ring-gray-200 shadow-md" x-bind:src="section_1.profile_img" />
-						</div>
-						<div>
-							<!-- Name -->
-							<h1 class="text-4xl text-center font-normal leading-normal mt-0 mb-2">
-								<span x-text="person.full_name"></span>
-								<span class="material-symbols-outlined">
-									verified_user
-								</span>
-							</h1>
-							<hr class="my-2 h-px bg-gray-300 border-0" />
-							<div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
-								<!-- Title-->
-								<h2 class="text-2xl text-center font-normal leading-normal mt-0 mb-2" x-text="person.title"></h2>
-								<!-- Summary -->
-								<p x-text="person.summary" class="p-5"></p>
-							</div>
-							<div class="text-center mt-[2em] md:mt-[3em] h-auto">
-								<a href="#" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border-b-4 border-red-900 hover:border-red-500 rounded block md:inline-block">
-									See Portfolio
-									<span class="fa fa-star-o align-middle"></span>
-								</a>
-								<a href="#" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border-b-4 border-green-900 hover:border-green-500 rounded block md:inline-block">
-									See Work Experience
-									<span class="fa fa-list-alt align-middle"></span>
-								</a>
-								<a href="/skills.html" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border-b-4 border-blue-900 hover:border-blue-500 rounded block md:inline-block">
-									See Skills
-									<span class="fa fa-magic align-middle"></span>
-								</a>
-							</div>
-							<!-- Social -->
-							<div class="text-center">
-								<ul class="text-center menu-social mt-[2em]">
-									<template x-for="social in menu.social">
-										<li class="inline p-2">
-											<a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
-												<span x-bind:class="social.icon"></span>
-											</a>
-										</li>
-									</template>
-								</ul>
-							</div>
+				<div class="mt-[3em]">
+                    <div class="mb-[2em] w-full">
+						<div class="flex md:h-screen sm:h-auto">
+                            <div class="m-auto w-full">
+                                <!-- Name -->
+                                <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0">
+                                    <span>Skills</span>
+                                    <span class="fa fa-magic align-middle"></span>
+                                </h1>
+                                <hr class="my-2 h-px bg-gray-300 border-0" />
+                                <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
+                                    <template x-for="skill in section_2.skills">
+                                        <div class="px-3 md:px-[2em]">
+                                            <!-- Skill Type-->
+                                            <h2 class="text-2xl text-left font-normal leading-normal" x-text="skill.type"></h2>
+                                            <!-- Skill Details -->
+                                            <template x-for="list in skill.lists">
+                                                <p x-html="`<span class='fa fa-check text-green-500'></span>&nbsp;` + list" class="text-left"></p>
+                                            </template>
+                                        </div>
+                                    </template>
+                                </div>
+                                <!-- Social -->
+                                <div class="text-center">
+                                    <ul class="text-center menu-social mt-[2em]">
+                                        <template x-for="social in menu.social">
+                                            <li class="inline p-2">
+                                                <a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
+                                                    <span x-bind:class="social.icon"></span>
+                                                </a>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
