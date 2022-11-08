@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" data-n-head-ssr>
+  <head>
+  	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Contact | Marcelo Oblan</title>
+	<meta data-n-head="ssr" data-hid="description" name="description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
+	<link data-n-head="ssr" rel="icon" type="rel/icon" href="/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/css/app.css" />
+	<script src="/assets/js/tailwind.js"></script>
+  </head>
+  <style>
+	[x-cloak] { display: none !important; }
+  </style>
+  <body class="bg-gray-900 h-auto scroll-smooth">
+	<!-- gray-900 -->
+    <div id="alpine-app" x-data="xData" x-cloak>
+	    <!-- Animations-->
+		<template x-teleport="body">
+			<ul class="circles">
+				<template x-for="i in animation.object_count">
+					<li></li>
+				</template>
+			</ul>
+		</template>
+
+		<!-- Menu -->
+		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block border-gray-200 px-2 sm:px-4 py-2.5 fixed">
+			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
+			    <a x-bind:href="libraries.safeUrl('index')"  class="flex items-center">
+				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
+				    <span class="text-gray-100" x-text="menu.quote"></span>
+			    </a>
+			    <template x-if="menu.is_open == false">
+				    <button data-collapse-toggle="navbar-default" type="button" 
+				    class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg" 
+				    aria-controls="navbar-default" aria-expanded="false"
+				    @click.prevent="menu.is_open = true;"
+				    >
+				        <span class="sr-only">Open main menu</span>
+				        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+				    </button>
+			    </template>
+				<div class="w-full block w-auto" x-bind:class="{'open': menu.is_open == true, 'close': menu.is_open == false}" id="navbar-modal-backdrop" @click.prevent="menu.is_open = false"></div>
+				<div class="w-full block w-auto shadow-[22px_2px_20px_0px_rgba(0,0,0,1)]"
+				x-bind:class="{'open': menu.is_open == true, 'close': menu.is_open == false}"
+				id="navbar-container">
+					<div class="sub-container flex h-screen">
+						<div class="m-auto">
+							<ul class="p-4 md:text-sm md:font-medium md:border-0 text-center menu-options">
+								  <template x-for="menu_item in menu.options">
+									<li>
+										<a x-bind:href="libraries.safeUrl(menu_item.href)" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
+									</li>
+								  </template>
+							</ul>
+							<ul class="text-center menu-social">
+								<template x-for="social in menu.social">
+									<li class="inline p-2">
+										<a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
+											<span x-bind:class="social.icon"></span>
+										</a>
+									</li>
+								</template>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Content-->
+		<div class="grid md:grid-cols-5 gap-1 text-white">
+			<div class="md:col-span-1"></div>
+			<div class="md:col-span-3 px-5 md:px-3">
+				<div class="mt-[3em]">
+                    <div class="mb-[2em] w-full">
+						<div class="flex md:h-screen sm:h-auto">
+                            <div class="m-auto w-full">
+                                <!-- Name -->
+                                <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0">
+                                    <span>Ways to Contact Me</span>
+                                    <span class="fa fa-mobile align-middle"></span>
+                                </h1>
+                                <hr class="my-2 h-px bg-gray-300 border-0" />
+                                <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
+                                    <h1>BEBEBEB</h1>
+                                </div>
+                                <!-- Social -->
+                                <div class="text-center">
+                                    <ul class="text-center menu-social mt-[2em]">
+                                        <template x-for="social in menu.social">
+                                            <li class="inline p-2">
+                                                <a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
+                                                    <span x-bind:class="social.icon"></span>
+                                                </a>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="md:col-span-1"></div>
+		</div>
+		<!-- Footer -->
+		<footer class="p-4 text-white bg-black">
+			<span class="block text-sm text-white text-center">
+				© <span x-text="footer.year"></span>. All Rights Reserved.
+			</span>
+		</footer>
+	</div>
+	<script src="./assets/js/xdata.js"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </body>
+</html>

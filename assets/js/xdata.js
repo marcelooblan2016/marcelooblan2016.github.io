@@ -12,7 +12,7 @@ function xData() {
                 {text: "Skills", href: "skills"},
                 {text: "Work Experience", href: "work-experience"},
                 {text: "Portfolio", href: "portfolio"},
-                {text: "Contact Me", href: "#"},
+                {text: "Contact Me", href: "contact-me"},
             ],
             is_open: false,
             social: [
@@ -23,6 +23,10 @@ function xData() {
         },
         footer: {
             year: function () { return (new Date()).getFullYear(); }
+        },
+        contact: {
+            email: "marcelo.oblan2016@gmail.com",
+            location: "Philippines"
         },
         person: {
             full_name: "Marcelo Oblan III",
