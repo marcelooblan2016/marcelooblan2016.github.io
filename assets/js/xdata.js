@@ -1,6 +1,6 @@
 function xData() {
     return {
-        pageLoaded: false,
+        pageLoaded: true,
         animation: {
             object_count: 50,
         },
@@ -12,13 +12,13 @@ function xData() {
                 {text: "Skills", href: "skills"},
                 {text: "Work Experience", href: "work-experience"},
                 {text: "Portfolio", href: "portfolio"},
-                {text: "Contact Me", href: "contact-me"},
+                // {text: "Contact Me", href: "contact-me"},
             ],
             is_open: false,
             social: [
-                {text: 'Github', icon: 'fa fa-github', href: 'https://github.com/marcelooblan2016'},
-                {text: 'Facebook', icon: 'fa fa-facebook', href: 'https://www.facebook.com/Mr.AllTimeHigh'},
-                {text: 'Instagram', icon: 'fa fa-instagram', href: 'https://www.instagram.com/marxoblan/'},
+                {text: 'Github', value: 'github', icon: 'fa fa-github', href: 'https://github.com/marcelooblan2016'},
+                {text: 'Facebook', value: 'facebook', icon: 'fa fa-facebook', href: 'https://www.facebook.com/Mr.AllTimeHigh'},
+                {text: 'Instagram', value: 'instagram', icon: 'fa fa-instagram', href: 'https://www.instagram.com/marxoblan/'},
             ]
         },
         footer: {
@@ -128,6 +128,10 @@ function xData() {
                 if (photos.length < 1) return '#';
 
                 return photos.filter(photo => typeof photo['front'] != 'undefined' && photo['front'] === true)[0].url;
+            },
+            getGithubLink: function ({menu}) {
+                let menuSocial = menu.social;
+                return menuSocial.filter(menu => menu.value == "github" )[0].href;
             }
         },
         portfolio_shown: false,
@@ -756,4 +760,10 @@ function xData() {
             }
         ]
     };
+}
+
+/* Load Event */
+window.onload = function () {
+    /* Slowly open content with opacity effect */
+    document.getElementById('alpine-app').classList.add('show');
 }

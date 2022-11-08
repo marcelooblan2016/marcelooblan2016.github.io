@@ -2,7 +2,7 @@
 <html lang="en" data-n-head-ssr>
   <head>
   	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>Work Experience | Marcelo Oblan</title>
+    <title>Page Not Found | Marcelo Oblan</title>
 	<meta data-n-head="ssr" data-hid="description" name="description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
 	<link data-n-head="ssr" rel="icon" type="rel/icon" href="/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
 		<!-- Menu -->
 		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block border-gray-200 px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
-			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
+			    <a x-bind:href="libraries.safeUrl('index')"  class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
 				    <span class="text-gray-100" x-text="menu.quote"></span>
 			    </a>
@@ -80,30 +80,13 @@
                     <div class="mb-[2em] w-full">
 						<div class="flex md:h-screen sm:h-auto">
                             <div class="m-auto w-full">
-                                <!-- Name -->
-                                <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0">
-                                    <span>Work Experience</span>
-                                    <span class="fa fa-magic align-middle"></span>
-                                </h1>
-                                <hr class="my-2 h-px bg-gray-300 border-0" />
-                                <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
-                                    <template x-for="experience in experiences">
-                                        <div class="px-3 md:px-[2em] pb-[1em]">
-                                            <!-- Experiece -->
-                                            <h2 class="text-2xl text-left font-normal leading-normal">
-                                                <span class="text-2xl" x-text="experience.company"></span>&nbsp;&bullet;&nbsp;
-                                                <span class="text-2xl" x-text="experience.type"></span>&nbsp;&bullet;&nbsp;
-                                                <span class="text-2xl" x-text="experience.time_frame"></span>
-                                            </h2>
-                                            <p x-html="`<span class='fa fa-map-pin text-gray-500'></span>&nbsp;${experience.location}`" class="text-left text-lg text-gray-400"></p>
-                                            <!-- Experience Description -->
-                                            <template x-for="list in experience.description">
-                                                <p x-html="`<span class='fa fa-minus text-gray-500'></span>&nbsp;` + list" class="text-left"></p>
-                                            </template>
-                                        </div>
-                                    </template>
+                                <div class="p-5 mt-[1em] h-screen md:h-auto min-h-[200px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
+                                    <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0 pt-[1em]">
+                                        <span>Page Not Found</span>
+                                        <span class="fa fa-exclamation-triangle align-middle"></span>
+                                    </h1>
                                 </div>
-                                <!-- Social -->
+
                                 <div class="text-center">
                                     <ul class="text-center menu-social mt-[2em]">
                                         <template x-for="social in menu.social">

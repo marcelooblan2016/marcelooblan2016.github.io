@@ -83,11 +83,15 @@
 						</div>
 						<div>
 							<!-- Name -->
-							<h1 class="text-4xl text-center font-normal leading-normal mt-0 mb-2">
+							<h1 class="text-4xl text-center font-normal leading-normal mt-0 mb-0">
 								<span x-text="person.full_name"></span>
 								<span class="material-symbols-outlined">
 									verified
 								</span>
+								<div class="text-center text-sm md:text-xl text-gray-400">
+									<a class="block md:inline-block" x-bind:href="`mailto:${contact.email}`" title="Email Me" x-html="`<span class='fa fa-envelope-o align-middle'></span>&nbsp;${contact.email}`"></a>
+									<a class="block md:inline-block" target="_blank" x-bind:href="`${libraries.getGithubLink($data)}`" title="See Github" x-html="`<span class='fa fa fa-github align-middle'></span>&nbsp;${(libraries.getGithubLink($data)).toString().replace('https://', '')}`"></a>
+								</div>
 							</h1>
 							<hr class="my-2 h-px bg-gray-300 border-0" />
 							<div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
@@ -101,7 +105,7 @@
 									See Portfolio
 									<span class="fa fa-star-o align-middle"></span>
 								</a>
-								<a x-bind:href="libraries.safeUrl('work-experience')" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 border-b-4 border-green-900 hover:border-green-500 rounded block md:inline-block">
+								<a x-bind:href="libraries.safeUrl('work-experience')" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 border-b-4 border-green-900 hover:border-green-500 rounded block md:inline-block">
 									See Work Experience
 									<span class="fa fa-list-alt align-middle"></span>
 								</a>
