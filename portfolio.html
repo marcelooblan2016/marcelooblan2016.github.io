@@ -95,6 +95,7 @@
 													<img class="object-cover h-auto w-full p-1 bg-white border border-1 border-gray-300 rounded " x-bind:src="`/assets/images/portfolio/${libraries.frontPhoto(portfolio.photos)}`">
 												</div>
 												<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200 dark:text-white" x-text="portfolio.title"></h5>
+												<p class="mb-3 text-sm font-normal text-gray-300 text-center" x-html="`<span class='fa fa-hourglass-start'></span>&nbsp;${libraries.getPortfolioDateFromAndTo(portfolio)}`" x-show="libraries.getPortfolioDateFromAndTo(portfolio) != null"></p>
 												<p class="mb-3 font-normal text-gray-300" x-text="portfolio.description"></p>
 												<template x-for="tech in portfolio.tech_used">
 													<span class="bg-gray-100 inline-block text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 border border-1" x-text="tech"></span>
