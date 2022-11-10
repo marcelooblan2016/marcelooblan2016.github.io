@@ -132,6 +132,14 @@ function xData() {
             getGithubLink: function ({menu}) {
                 let menuSocial = menu.social;
                 return menuSocial.filter(menu => menu.value == "github" )[0].href;
+            },
+            getPortfolioDateFromAndTo(portfolio) {
+                if (portfolio.date_from == null) return null;
+
+                return [
+                    portfolio.date_from,
+                    portfolio.date_to
+                ].filter(item => item != null).join("&nbsp;&bullet;&nbsp;");
             }
         },
         portfolio_shown: false,
@@ -595,27 +603,6 @@ function xData() {
                 ],
                 "order": null,
                 "is_display": true
-            },
-            {
-                "shown": false,
-                "title": "Delmundo Travel & Tours",
-                "slug": "delmundo-travel-and-tours",
-                "description": "",
-                "date_from": "",
-                "date_to": "",
-                "status": "completed",
-                "url": null,
-                "tech_used": [
-                    "PHP",
-                    "MySQL",
-                    "jQuery",
-                    "Javascript",
-                    "Css",
-                    "Html"
-                ],
-                "photos": [],
-                "order": null,
-                "is_display": false
             },
             {
                 "shown": false,
