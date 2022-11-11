@@ -41,7 +41,7 @@ function xData() {
             {
                 type: "BackEnd",
                 lists: [
-                    "PHP : Core PHP (OOP), Laravel (elastic search, redis), Laravel Nova, Lumen, Code Igniter, Python",
+                    "PHP : Core PHP, Laravel (elastic search, redis), Laravel Nova, Lumen, Code Igniter, Python",
                     "Database: MySQL, PostgreSQL, NoSQL",
                 ],
             },
@@ -752,5 +752,8 @@ function xData() {
 /* Load Event */
 window.onload = function () {
     /* Slowly open content with opacity effect */
-    document.getElementById('alpine-app').classList.add('show');
+    document.getElementById('modal-init').classList.add('loaded');
+    setTimeout(function () {
+        document.getElementById('modal-init').remove();
+    }, 700);
 }

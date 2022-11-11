@@ -19,6 +19,9 @@
   <body class="bg-gray-900 h-auto scroll-smooth">
 	<!-- gray-900 -->
     <div id="alpine-app" x-data="xData" x-cloak>
+		<div id="modal-init">
+			<i class="fa fa-cog fa-spin text-white text-4xl loader" aria-hidden="true"></i>
+		</div>
 	    <!-- Animations-->
 		<template x-teleport="body">
 			<ul class="circles">
@@ -92,7 +95,7 @@
                                         <div class="p-6 w-full bg-[rgba(255,255,255,0)] text-white rounded-lg my-1" x-intersect:enter="portfolio.shown = true" >
                                             <div x-show="portfolio.shown === true" x-transition>
 												<div class="my-2">
-													<img class="object-cover h-auto w-full p-1 bg-white border border-1 border-gray-300 rounded " x-bind:src="`/assets/images/portfolio/${libraries.frontPhoto(portfolio.photos)}`">
+													<img class="object-cover h-auto w-full p-1 bg-white border border-1 border-gray-300 rounded min-h-[250px] md:min-h-[300px]" x-bind:src="`/assets/images/portfolio/${libraries.frontPhoto(portfolio.photos)}`">
 												</div>
 												<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-200 dark:text-white" x-text="portfolio.title"></h5>
 												<p class="mb-3 text-sm font-normal text-gray-300 text-center" x-html="`<span class='fa fa-hourglass-start'></span>&nbsp;${libraries.getPortfolioDateFromAndTo(portfolio)}`" x-show="libraries.getPortfolioDateFromAndTo(portfolio) != null"></p>
@@ -134,7 +137,7 @@
 	</div>
 	<script src="./assets/js/xdata.js"></script>
     <!-- Alpine Plugins -->
-    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
-	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="./assets/js/alpine-intersect.js"></script>
+	<script defer src="./assets/js/alpine.js"></script>
   </body>
 </html>
