@@ -2,7 +2,7 @@
 <html lang="en" data-n-head-ssr>
   <head>
   	<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>About | Marcelo Oblan</title>
+    <title>Page Not Found | Marcelo Oblan</title>
 	<meta data-n-head="ssr" data-hid="description" name="description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
 	<link data-n-head="ssr" rel="icon" type="rel/icon" href="/favicon.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +34,7 @@
 		<!-- Menu -->
 		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block border-gray-200 px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
-			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
+			    <a x-bind:href="libraries.safeUrl('index')"  class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
 				    <span class="text-gray-100" x-text="menu.quote"></span>
 			    </a>
@@ -79,56 +79,29 @@
 		<div class="grid md:grid-cols-5 gap-1 text-white">
 			<div class="md:col-span-1"></div>
 			<div class="md:col-span-3 px-5 md:px-3">
-				<div class="flex md:h-screen sm:h-auto">
-                    <div class="m-auto">
-						<div class="flex flex-col justify-center items-center px-2 py-2 mt-[5em] md:mt-0">
-							<img class="w-[200px] h-auto rounded-full ring-[3px] ring-gray-200 shadow-md min-h-[150px]" x-bind:src="profile_img" />
-						</div>
-						<div>
-							<!-- Name -->
-							<h1 class="text-4xl text-center font-normal leading-normal mt-0 mb-0">
-								<span x-text="person.full_name"></span>
-								<span class="material-symbols-outlined">
-									verified
-								</span>
-								<div class="text-center text-sm md:text-xl text-gray-400">
-									<a class="block md:inline-block" x-bind:href="`mailto:${contact.email}`" title="Email Me" x-html="`<span class='fa fa-envelope-o align-middle'></span>&nbsp;${contact.email}`"></a>
-									<a class="block md:inline-block" target="_blank" x-bind:href="`${libraries.getGithubLink($data)}`" title="See Github" x-html="`<span class='fa fa fa-github align-middle'></span>&nbsp;${(libraries.getGithubLink($data)).toString().replace('https://', '')}`"></a>
-								</div>
-							</h1>
-							<hr class="my-2 h-px bg-gray-300 border-0" />
-							<div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
-								<!-- Title-->
-								<h2 class="text-2xl text-center font-normal leading-normal mt-0 mb-2" x-text="person.title"></h2>
-								<!-- Summary -->
-								<p x-text="person.summary" class="p-5"></p>
-							</div>
-							<div class="text-center mt-[2em] md:mt-[3em] h-auto">
-								<a x-bind:href="libraries.safeUrl('portfolio')"class="bg-gray-300 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 border-b-4 border-gray-400 hover:border-gray-500 rounded block md:inline-block">
-									See Portfolio
-									<span class="fa fa-star-o align-middle"></span>
-								</a>
-								<a x-bind:href="libraries.safeUrl('work-experience')" class="bg-gray-300 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 border-b-4 border-gray-400 hover:border-gray-500 rounded block md:inline-block">
-									See Work Experience
-									<span class="fa fa-list-alt align-middle"></span>
-								</a>
-								<a x-bind:href="libraries.safeUrl('skills')" class="bg-gray-300 hover:bg-gray-300 text-gray-800 font-bold py-2 px-4 border-b-4 border-gray-400 hover:border-gray-500 rounded block md:inline-block">
-									See Skills
-									<span class="fa fa-magic align-middle"></span>
-								</a>
-							</div>
-							<!-- Social -->
-							<div class="text-center">
-								<ul class="text-center menu-social mt-[2em]">
-									<template x-for="social in menu.social">
-										<li class="inline p-2">
-											<a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
-												<span x-bind:class="social.icon"></span>
-											</a>
-										</li>
-									</template>
-								</ul>
-							</div>
+				<div class="mt-[3em]">
+                    <div class="mb-[2em] w-full">
+						<div class="flex md:h-screen sm:h-auto">
+                            <div class="m-auto w-full">
+                                <div class="p-5 mt-[1em] h-screen md:h-auto min-h-[200px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
+                                    <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0 pt-[1em]">
+                                        <span>Page Not Found</span>
+                                        <span class="fa fa-exclamation-triangle align-middle"></span>
+                                    </h1>
+                                </div>
+
+                                <div class="text-center">
+                                    <ul class="text-center menu-social mt-[2em]">
+                                        <template x-for="social in menu.social">
+                                            <li class="inline p-2">
+                                                <a x-bind:href="social.href" target="_blank" x-bind:title="social.text">
+                                                    <span x-bind:class="social.icon"></span>
+                                                </a>
+                                            </li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </div>
 						</div>
 					</div>
 				</div>
@@ -143,6 +116,6 @@
 		</footer>
 	</div>
 	<script src="./assets/js/xdata.js"></script>
-	<script defer src="./assets/js/alpine.js"></script>
+	<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   </body>
 </html>
