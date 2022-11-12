@@ -55,16 +55,23 @@
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
 				    <span class="text-gray-100" x-text="menu.quote"></span>
 			    </a>
-			    <template x-if="menu.is_open == false">
-				    <button data-collapse-toggle="navbar-default" type="button" 
-				    class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg" 
-				    aria-controls="navbar-default" aria-expanded="false"
-				    @click.prevent="menu.is_open = true;"
-				    >
-				        <span class="sr-only">Open main menu</span>
-				        <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+				<template x-if="menu.is_open == false">
+					<button data-collapse-toggle="navbar-default" type="button" 
+					class="inline-flex items-center p-2 ml-3 text-sm text-white rounded-lg" 
+					aria-controls="navbar-default" aria-expanded="false"
+					@click.prevent="menu.is_open = true;"
+					>
+						<span class="sr-only">Open main menu</span>
+						<svg class="w-6 h-6 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
 				    </button>
-			    </template>
+                </template>
+				<template x-if="menu.is_open == true">
+					<button type="button" class="inline-flex items-center p-2 ml-3 text-sm text-white">
+						<span class="material-symbols-outlined w-6 h-6 text-white">
+							close
+						</span>
+					</button>
+				</template>
 				<div class="w-full block w-auto" x-bind:class="{'open': menu.is_open == true, 'close': menu.is_open == false}" id="navbar-modal-backdrop" @click.prevent="menu.is_open = false"></div>
 				<div class="w-full block w-auto shadow-[22px_2px_20px_0px_rgba(0,0,0,1)]"
 				x-bind:class="{'open': menu.is_open == true, 'close': menu.is_open == false}"
