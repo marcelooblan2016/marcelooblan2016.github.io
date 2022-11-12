@@ -19,6 +19,7 @@ function xData() {
                 {text: 'Github', value: 'github', icon: 'fa fa-github', href: 'https://github.com/marcelooblan2016'},
                 {text: 'Facebook', value: 'facebook', icon: 'fa fa-facebook', href: 'https://www.facebook.com/Mr.AllTimeHigh'},
                 {text: 'Instagram', value: 'instagram', icon: 'fa fa-instagram', href: 'https://www.instagram.com/marxoblan/'},
+                {text: 'LinkedIn', value: 'linkedin', icon: 'fa fa-linkedin-square', href: 'https://www.linkedin.com/in/marcelo-oblan-2016/'}        
             ]
         },
         footer: {
