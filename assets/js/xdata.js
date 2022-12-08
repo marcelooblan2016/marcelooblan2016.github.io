@@ -31,7 +31,7 @@ function xData() {
         },
         person: {
             full_name: "Marcelo Oblan III",
-            title: "Fullstack Web Developer (Laravel | Vuejs | LAMP)",
+            title: "Fullstack Web Developer (Laravel | Vuejs | LAMP | TALL)",
             summary: [
                 "Web Developer since 2012",
                 "A Fullstack which have been involved in many projects (s) such as wifi hotspots, payment gateway, online refund system, eCommerce, Software as a service. Some of them are Freelance jobs & most of them are Full-Time Project-Based.",
@@ -40,18 +40,24 @@ function xData() {
         profile_img: "./assets/images/profile_picture.jpg",
         skills: [
             {
+                type: "Framework",
+                lists: [
+                    "Laravel (elastic search, redis), Livewire, Laravel Nova, Lumen, Code igniter",
+                    "WordPress, October CMS"
+                ],
+            },
+            {
                 type: "BackEnd",
                 lists: [
-                    "PHP : Core PHP, Laravel (elastic search, redis), Laravel Nova, Lumen, Code Igniter, Python",
-                    "Database: MySQL, PostgreSQL, NoSQL",
+                    "PHP, Python",
+                    "MySQL, PostgreSQL, NoSQL",
                 ],
             },
             {
                 type: "FrontEnd",
                 lists: [
                     "Styling: CSS / SCSS / SASS, Tailwind, Bootstrap",
-                    "Javascript: Jquery, Vue.js/Vuex, Nuxt.js, Node.js, TypeScript, Alpine.js",
-                    "CMS: WordPress, October CMS"
+                    "Javascript, Jquery, Vue.js/Vuex, Nuxt.js, Node.js, TypeScript, Alpine.js"
                 ]
             },
             {
