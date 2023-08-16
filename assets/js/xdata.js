@@ -34,7 +34,7 @@ function xData() {
             title: "Fullstack Web Developer (Laravel | Vuejs | LAMP | TALL)",
             summary: [
                 "Web Developer since 2012",
-                "A Fullstack which have been involved in many projects (s) such as wifi hotspots, payment gateway, online refund system, eCommerce, Software as a service. Some of them are Freelance jobs & most of them are Full-Time Project-Based.",
+                "A Fullstack developer who has been involved in many projects, such as wifi hotspots, payment gateways, online refund systems, eCommerce, and Software as a Service. Some of them were freelance jobs, while most of them were full-time project-based positions.",
             ].join(","),
         },
         profile_img: "./assets/images/profile_picture.jpg",
@@ -43,14 +43,14 @@ function xData() {
                 type: "Framework",
                 lists: [
                     "Laravel (elastic search, redis), Livewire, Laravel Nova, Lumen, Code igniter",
-                    "WordPress, October CMS"
+                    "WordPress"
                 ],
             },
             {
                 type: "BackEnd",
                 lists: [
                     "PHP, Python",
-                    "MySQL, PostgreSQL, NoSQL",
+                    "MySQL, PostgreSQL",
                 ],
             },
             {
@@ -66,7 +66,7 @@ function xData() {
                     "Project Management Tools: Trello, Jira, Teamwork",
                     "Tools: Git / Git Flow, NPM, Command Line / SSH, SEO",
                     "OS: Linux (Ubuntu, Centos, Amazon Linux)",
-                    "Hosting / Deployment: Envoyer, AWS, Digital Ocean, Namecheap"
+                    "Hosting / Deployment: Envoyer, AWS, Digital Ocean, Namecheap, Hostinger"
                 ]
             },
         ],
@@ -78,7 +78,7 @@ function xData() {
                 time_frame: "2020 - Present",
                 title: "Software Engineer / FullStack",
                 description: [
-                    "eCommerce website for used cars (buy/sell) - Create new feature, maintain, bugfix & optimization; Laravel/Vue.js, Deploy"
+                    "Develop a platform for purchasing and selling pre-owned vehicles on the internet. This project involves generating novel functionalities, ensuring smooth operation, resolving issues, and enhancing performance. The technology stack includes Laravel and Vue.js, and the final product will be deployed after completion."
                 ]
             },
             {
@@ -88,8 +88,7 @@ function xData() {
                 time_frame: "Apr 2019 - Apr 2020",
                 title: "Laravel Web Developer",
                 description: [
-                    "Worked with team for an online shop (e-commerce) of cars, CarsZoom using laravel",
-                    "Worked on blog website SDPHP"
+                    "I collaborated with a team to develop an e-commerce website called CarsZoom, utilizing the Laravel framework. Additionally, I was involved in the development of the SDPHP blog website."
                 ]
             },
             {
@@ -99,9 +98,9 @@ function xData() {
                 time_frame: "Sep 2016 - Sep 2018",
                 title: "Back End Software Engineer",
                 description: [
-                    "Worked as member of a dedicated team for project wifi (Wifi Hotspots) of the client | Globe.",
-                    "A development team, Agile method.",
-                    "Project can usually be seen in public places like malls,mrt/lrt stations and airport. Im one of the backend developers of the API."
+                    "I was part of a committed team working on the wifi project (Wifi Hotspots) for the client Globe.",
+                    "We used the Agile method for development.",
+                    "The project was primarily implemented in public areas such as malls, MRT/LRT stations, and airports. My role in the project was as a backend developer for the API."
                 ]
             },
             {
@@ -153,9 +152,32 @@ function xData() {
         portfolios: [
             {
                 "shown": false,
+                "title": "Paralanx.com",
+                "slug": "paralanx-dot-com",
+                "description": "all-in-one website, featuring a diverse range of integrated tools such as paraphraser, grammar fixer, and summarizer, all powered by ChatGPT. Enhance your blogging experience with its custom-built CMS, optimized with GPT technology for seamless blog creation",
+                "date_from": "05-01-2023",
+                "date_to": "present",
+                "status": "active",
+                "url": "https://paralanx.com",
+                "tech_used": [
+                    "Tailwind",
+                    "Alpine.js",
+                    "Laravel",
+                    "Livewire",
+                    "Hostinger",
+                    "OpenAi"
+                ],
+                "photos": [
+                    {"url": "paralanx/front.webp",  "front": true}
+                ],
+                "order": null,
+                "is_display": true
+            },
+            {
+                "shown": false,
                 "title": "Crypto Bot Trader",
                 "slug": "crypto-bot-trader",
-                "description": "swapping of ERC-20 Tokens (buy/sell) based on the market health with bot strategy (condition) - by utilizing MetaMask & Puppeteer (polygon network)",
+                "description": "The process of exchanging ERC-20 Tokens (purchasing/selling) depending on the market's condition using a bot strategy, achieved through the utilization of MetaMask and Puppeteer.",
                 "date_from": "01-01-2022",
                 "date_to": "02-15-2022",
                 "status": "active",
@@ -206,7 +228,7 @@ function xData() {
                 "shown": false,
                 "title": "AllCars",
                 "slug": "allcars",
-                "description": "An e-commerce for Cars which allow users to buy & sell used cars. It scrapes data from its multiple known source & organized them accordingly.",
+                "description": "A platform for purchasing and selling pre-owned vehicles in the online marketplace.",
                 "date_from": "08-05-2019",
                 "date_to": "present",
                 "status": "ongoing",
@@ -217,7 +239,7 @@ function xData() {
                     "MySQL ^8.0",
                     "NoSQL",
                     "Python -Intelligent Image",
-                    "Dom Crawler",
+                    "Puppeteer",
                     "Docker",
                     "Redis",
                     "Elastic Search",
@@ -233,7 +255,7 @@ function xData() {
                     "Active Campaign"
                 ],
                 "photos": [
-                    {"url": "allcars/1.jpg", "front": true},
+                    {"url": "allcars/front.webp", "front": true},
                     {"url": "allcars/2.jpg"},
                     {"url": "allcars/3.jpg"}
                 ],
@@ -455,7 +477,7 @@ function xData() {
                 "date_from": "2018-04",
                 "date_to": "2018-05",
                 "status": "completed",
-                "url": "",
+                "url": null,
                 "tech_used": [
                     "Wordpress",
                     "PHP",
