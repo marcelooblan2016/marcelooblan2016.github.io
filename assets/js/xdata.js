@@ -63,6 +63,7 @@ function xData() {
             {
                 type: "Others",
                 lists: [
+                    "Approach: TDD (PHPUNIT), AGILE",
                     "Project Management Tools: Trello, Jira, Teamwork",
                     "Tools: Git / Git Flow, NPM, Command Line / SSH, SEO",
                     "OS: Linux (Ubuntu, Centos, Amazon Linux)",
