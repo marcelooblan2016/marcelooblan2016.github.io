@@ -117,7 +117,7 @@
                                     <template x-for="skill in skills">
                                         <div class="px-3 md:px-[2em]">
                                             <!-- Skill Type-->
-                                            <h2 class="text-2xl text-left font-normal leading-normal" x-text="skill.type"></h2>
+											<h2 class="text-2xl text-left font-normal leading-normal mt-0 mb-2" x-text="skill.type"></h2>
                                             <!-- Skill Details -->
                                             <template x-for="list in skill.lists">
                                                 <p x-html="`<span class='fa fa-check text-green-500'></span>&nbsp;` + list" class="text-left"></p>

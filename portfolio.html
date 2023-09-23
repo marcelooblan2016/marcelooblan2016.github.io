@@ -100,9 +100,9 @@
 			</div>
 		</nav>
 		<!-- Content-->
-		<div class="grid md:grid-cols-5 gap-1 text-gray-700">
+		<div class="grid md:grid-cols-7 gap-1 text-gray-700">
 			<div class="md:col-span-1"></div>
-			<div class="md:col-span-3 px-5 md:px-3">
+			<div class="md:col-span-5 px-5 md:px-3">
 				<div class="mt-[3em]">
                     <div class="mb-[2em] w-full">
 						<div class="flex h-auto">
@@ -115,26 +115,31 @@
 								<hr class="my-2 h-px border-dashed border-2 border-slate-300" />
                                 <div class="p-5 min-h-[100px] bg-[rgba(255,255,255,0.6)] border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(0,0,0,0.5)] text-center">
                                     <!-- Content Start -->
-                                    <template x-for="portfolio in portfolios">
-                                        <div class="p-6 w-full bg-[rgba(255,255,255,0)] rounded-lg my-1" x-intersect:enter="portfolio.shown = true" >
-                                            <div x-show="portfolio.shown === true" x-transition>
-												<div class="my-2">
-													<img draggable="false" class="object-cover h-auto w-full p-1 bg-white border border-1 border-gray-300 rounded min-h-[250px] md:min-h-[300px]" x-bind:src="`/assets/images/portfolio/${libraries.frontPhoto(portfolio.photos)}`">
-												</div>
-												<h5 class="text-2xl font-bold tracking-tight text-gray-500" x-text="portfolio.title"></h5>
-												<hr class="w-[20%] border-gray-500 mx-auto my-1"/>
-												<div x-show="portfolio.url != null" class="text-md text-gray-500">
-													<a :href="portfolio.url" target="_blank" x-html="`<span class='fa fa-link align-middle'></span>&nbsp;${portfolio.url}`"></a>
-												</div>
-												<p class="mb-3 text-sm font-normal text-center" x-html="`<span class='fa fa-hourglass-start'></span>&nbsp;${libraries.getPortfolioDateFromAndTo(portfolio)}`" x-show="libraries.getPortfolioDateFromAndTo(portfolio) != null"></p>
-												<p class="mb-3 font-normal" x-text="portfolio.description"></p>
-												<template x-for="tech in portfolio.tech_used">
-													<span class="bg-gray-100 inline-block text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 border border-1" x-text="tech"></span>
-												</template>
-											</div>
-											<hr class="my-2"/>
-                                        </div>
-                                    </template>
+									<div class="grid md:grid-cols-2 gap-1">
+										<template x-for="portfolio in portfolios">
+
+												<!-- COLUMN START -->
+													<div class="p-6 w-full bg-[rgba(255,255,255,0)] rounded-lg my-1" x-intersect:enter="portfolio.shown = true" >
+														<div x-show="portfolio.shown === true" x-transition>
+															<div class="my-2">
+																<img draggable="false" class="object-cover h-auto w-full p-1 bg-white border border-1 border-gray-300 rounded min-h-[250px] md:min-h-[300px]" x-bind:src="`/assets/images/portfolio/${libraries.frontPhoto(portfolio.photos)}`">
+															</div>
+															<h2 class="text-2xl text-center font-normal leading-normal mt-0" x-text="portfolio.title"></h2>
+															<hr class="w-[20%] border-gray-300 mx-auto mb-1"/>
+															<div x-show="portfolio.url != null" class="text-md text-gray-500">
+																<a :href="portfolio.url" target="_blank" x-html="`<span class='fa fa-link align-middle'></span>&nbsp;${portfolio.url}`"></a>
+															</div>
+															<p class="mb-3 text-sm font-normal text-center" x-html="`<span class='fa fa-hourglass-start'></span>&nbsp;${libraries.getPortfolioDateFromAndTo(portfolio)}`" x-show="libraries.getPortfolioDateFromAndTo(portfolio) != null"></p>
+															<p class="mb-3 font-normal" x-text="portfolio.description"></p>
+															<template x-for="tech in portfolio.tech_used">
+																<span class="bg-gray-100 inline-block text-gray-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300 border border-1" x-text="tech"></span>
+															</template>
+														</div>
+														<!-- <hr class="my-2"/> -->
+													</div>
+												<!-- COLUMN END -->
+										</template>
+									</div>
                                     <!-- Content End-->
                                 </div>
                                 <!-- Social -->
