@@ -33,7 +33,7 @@
   <style>
 	[x-cloak] { display: none !important; }
   </style>
-  <body class="bg-gray-900 h-auto scroll-smooth">
+  <body class="h-auto scroll-smooth">
 	<!-- gray-900 -->
     <div id="alpine-app" x-data="xData" x-cloak>
 		<div id="modal-init">
@@ -49,11 +49,11 @@
 		</template>
 
 		<!-- Menu -->
-		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-[rgba(0,0,0,.5)] block border-b-2 border-[rgba(255,255,255,.2)] px-2 sm:px-4 py-2.5 fixed">
+		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
 			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
-				    <span class="text-gray-100" x-text="menu.quote"></span>
+				    <span class="text-gray-400" x-text="menu.quote"></span>
 			    </a>
 				<template x-if="menu.is_open == false">
 					<button data-collapse-toggle="navbar-default" type="button" 
@@ -62,7 +62,7 @@
 					@click.prevent="menu.is_open = true;"
 					>
 						<span class="sr-only">Open main menu</span>
-						<svg class="w-6 h-6 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+						<svg class="w-6 h-6 text-white md:text-black" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
 				    </button>
                 </template>
 				<template x-if="menu.is_open == true">
@@ -100,7 +100,7 @@
 			</div>
 		</nav>
 		<!-- Content-->
-		<div class="grid md:grid-cols-5 gap-1 text-white">
+		<div class="grid md:grid-cols-5 gap-1 text-gray-700">
 			<div class="md:col-span-1"></div>
 			<div class="md:col-span-3 px-5 md:px-3">
 				<div class="mt-[3em]">
@@ -112,8 +112,8 @@
                                     <span>Work Experience</span>
                                     <span class="fa fa-magic align-middle"></span>
                                 </h1>
-                                <hr class="my-2 h-px bg-gray-300 border-0" />
-                                <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
+								<hr class="my-2 h-px border-dashed border-2 border-slate-300" />
+                                <div class="p-5 min-h-[100px] bg-[rgba(255,255,255,0.6)] border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(0,0,0,0.5)] text-center">
                                     <template x-for="experience in experiences">
                                         <div class="px-3 md:px-[2em] pb-[1em]">
                                             <!-- Experiece -->
@@ -122,7 +122,7 @@
                                                 <span class="text-2xl" x-text="experience.type"></span>&nbsp;&bullet;&nbsp;
                                                 <span class="text-2xl" x-text="experience.time_frame"></span>
                                             </h2>
-                                            <p x-html="`<span class='fa fa-map-pin text-gray-500'></span>&nbsp;${experience.location}`" class="text-left text-lg text-gray-400"></p>
+                                            <p x-html="`<span class='fa fa-map-pin text-gray-500'></span>&nbsp;${experience.location}`" class="text-left text-lg text-gray-500"></p>
                                             <!-- Experience Description -->
                                             <template x-for="list in experience.description">
                                                 <p x-html="`<span class='fa fa-minus text-gray-500'></span>&nbsp;` + list" class="text-left"></p>
@@ -150,8 +150,8 @@
 			<div class="md:col-span-1"></div>
 		</div>
 		<!-- Footer -->
-		<footer class="p-4 text-white bg-black">
-			<span class="block text-sm text-white text-center">
+		<footer class="p-4 text-gray-400 bg-slate-100 border-t-[1px] border-gray-300">
+			<span class="block text-sm text-center">
 				© <span x-text="footer.year"></span>. All Rights Reserved.
 			</span>
 		</footer>
