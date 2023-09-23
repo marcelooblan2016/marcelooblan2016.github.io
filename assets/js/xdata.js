@@ -37,7 +37,7 @@ function xData() {
                 "A Fullstack developer who has been involved in many projects, such as wifi hotspots, payment gateways, online refund systems, eCommerce, and Software as a Service. Some of them were freelance jobs, while most of them were full-time project-based positions.",
             ].join(","),
         },
-        profile_img: "./assets/images/profile_picture.jpg",
+        profile_img: "./assets/images/profile-picture-ph.jpg",
         skills: [
             {
                 type: "Framework",
