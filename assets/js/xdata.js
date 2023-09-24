@@ -12,7 +12,7 @@ function xData() {
                 {text: "Skills", href: "skills"},
                 {text: "Work Experience", href: "work-experience"},
                 {text: "Portfolio", href: "portfolio"},
-                // {text: "Contact Me", href: "contact-me"},
+                {text: "Download Resume", href: "marcelo-oblan-iii-resume.pdf"}
             ],
             is_open: false,
             social: [
@@ -49,7 +49,7 @@ function xData() {
             {
                 type: "BackEnd",
                 lists: [
-                    "PHP, Python",
+                    "PHP",
                     "MySQL, PostgreSQL",
                 ],
             },
@@ -122,8 +122,13 @@ function xData() {
                 return url.toString().includes('localhost') || url.toString().includes('127.0.0.1');
             },
             safeUrl: function(page) {
+                // pdf file eg: resume or any other file
+                if (page.includes(".pdf") === true) {
+                    return page;
+                }
+                // production
                 if (page == 'index') { return '/' };
-
+                // localhost
                 let isLocalhost = this.isLocalhost(window.location);
                 if (isLocalhost === true) {
                     return [page, '.html'].join("");
