@@ -1,5 +1,6 @@
 @import "./menu.css";
 @import "./animation.css";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 #alpine-app {
     /* opacity: 0;
@@ -38,4 +39,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
+}
+
+.title-font {
+    font-family: 'Kanit', sans-serif;
 }

@@ -4,6 +4,9 @@ function xData() {
         animation: {
             object_count: 50,
         },
+        external_links: {
+            resume: "https://drive.google.com/file/d/19Zi_2ZM3Ik-2KBoa5_8SDd0CmWd_EZwf/view?usp=sharing"
+        },
         menu: {
             quote: "Keep Moving Forward!",
             favicon: "./favicon.png",
@@ -11,8 +14,7 @@ function xData() {
                 {text: "About Me", href: "index"},
                 {text: "Skills", href: "skills"},
                 {text: "Work Experience", href: "work-experience"},
-                {text: "Portfolio", href: "portfolio"},
-                {text: "Download Resume", href: "marcelo-oblan-iii-resume.pdf"}
+                {text: "Portfolio", href: "portfolio"}
             ],
             is_open: false,
             social: [
@@ -33,43 +35,72 @@ function xData() {
             full_name: "Marcelo Oblan III",
             title: "Fullstack Web Developer (Laravel | Vuejs | LAMP | TALL)",
             summary: [
-                "Web Developer since 2012",
-                "A Fullstack developer who has been involved in many projects, such as wifi hotspots, payment gateways, online refund systems, eCommerce, and Software as a Service. Some of them were freelance jobs, while most of them were full-time project-based positions.",
+                "I have been a web developer since 2012, specializing as a full-stack developer with extensive experience in diverse projects, including WiFi hotspots, payment gateways, online refund systems, eCommerce, and Software as a Service. My portfolio comprises a combination of freelance and full-time project-based roles.",
             ].join(","),
         },
         profile_img: "./assets/images/profile-picture-ph.jpg",
         skills: [
             {
-                type: "Framework",
+                type: "Front-End",
                 lists: [
-                    "Laravel (elastic search, redis), Livewire, Laravel Nova, Lumen, Code igniter",
-                    "WordPress"
+                    "Javascript", 
+                    "JQuery",
+                    "Vue.js / Vuex",
+                    "Nuxt.js",
+                    "Node.js",
+                    "TypeScript",
+                    "Alpine.js",
+                    "CSS / SCSS",
+                    "TailwindCSS",
+                    "Bootstrap"
                 ],
             },
             {
-                type: "BackEnd",
+                type: "Back-End",
                 lists: [
                     "PHP",
-                    "MySQL, PostgreSQL",
+                    "Laravel (elastic search, redis)",
+                    "Livewire",
+                    "Lumen",
+                    "Code Igniter"
                 ],
             },
             {
-                type: "FrontEnd",
+                type: "Database",
                 lists: [
-                    "Styling: CSS / SCSS / SASS, Tailwind, Bootstrap",
-                    "Javascript, Jquery, Vue.js/Vuex, Nuxt.js, Node.js, TypeScript, Alpine.js"
-                ]
+                    "MySQL",
+                    "PostgreSQL"
+                ],
+            },
+            {
+                type: "DevOps",
+                lists: [
+                    "Github Actions: CI/CD",
+                    "AWS (EC2, S3)",
+                    "Envoyer"
+                ],
+            },
+            {
+                type: "Management",
+                lists: [
+                    "Jira",
+                    "Trello",
+                    "Teamwork"
+                ],
             },
             {
                 type: "Others",
                 lists: [
-                    "Approach: TDD (PHPUNIT), AGILE",
-                    "Project Management Tools: Trello, Jira, Teamwork",
-                    "Tools: Git / Git Flow, NPM, Command Line / SSH, SEO",
-                    "OS: Linux (Ubuntu, Centos, Amazon Linux)",
+                    "TDD (PHPUNIT), AGILE",
+                    "Git / Git Flow",
+                    "Gihub, Bitbucket",
+                    "NPM", 
+                    "Command Line / SSH",
+                    "SEO",
+                    "Linux (Ubuntu, Centos, Amazon Linux)",
                     "Hosting / Deployment: Envoyer, AWS, Digital Ocean, Namecheap, Hostinger"
-                ]
-            },
+                ],
+            }
         ],
         experiences: [
             {
@@ -79,7 +110,8 @@ function xData() {
                 time_frame: "2020 - Present",
                 title: "Software Engineer / FullStack",
                 description: [
-                    "Develop a platform for purchasing and selling pre-owned vehicles on the internet. This project involves generating novel functionalities, ensuring smooth operation, resolving issues, and enhancing performance. The technology stack includes Laravel and Vue.js, and the final product will be deployed after completion."
+                    "Develop a platform for purchasing and selling pre-owned vehicles on the internet. This project involves generating novel functionalities, ensuring smooth operation, resolving issues, and enhancing performance. The technology stack includes Laravel and Vue.js, and the final product will be deployed after completion.",
+                    "Stack: Laravel (elastic search), Vue.js / Vuex, Javascript, JQuery, MySql, Bootstrap, Sass/Scss, Envoyer, Wordpress (Sage root), Node.js, Stripe, Twilio, Git, LiquidWeb, Amazon: S3, CentOS"
                 ]
             },
             {
@@ -89,7 +121,8 @@ function xData() {
                 time_frame: "Apr 2019 - Apr 2020",
                 title: "Laravel Web Developer",
                 description: [
-                    "I collaborated with a team to develop an e-commerce website called CarsZoom, utilizing the Laravel framework. Additionally, I was involved in the development of the SDPHP blog website."
+                    "I collaborated with a team to develop an e-commerce website called CarsZoom, utilizing the Laravel framework. Additionally, I was involved in the development of the SDPHP blog website.",
+                    "Stack: Laravel, Vue.js, Javascript, JQuery, MySql, Bootstrap"
                 ]
             },
             {
@@ -101,7 +134,8 @@ function xData() {
                 description: [
                     "I was part of a committed team working on the wifi project (Wifi Hotspots) for the client Globe.",
                     "We used the Agile method for development.",
-                    "The project was primarily implemented in public areas such as malls, MRT/LRT stations, and airports. My role in the project was as a backend developer for the API."
+                    "The project was primarily implemented in public areas such as malls, MRT/LRT stations, and airports. My role in the project was as a backend developer for the API.",
+                    "Stack: Laravel, Lumen, JQuery, MySql, Bootstrap"
                 ]
             },
             {
@@ -113,7 +147,8 @@ function xData() {
                 description: [
                     "Company started from 4 people to more than 50 people.",
                     "One of the 4 people as a web developer. In mid 2015 , I have become a Team Leader of the team.",
-                    "Develop their website, created a CMS, Chat App exclusively for company, Some New-to-me Projects like Online Refund System and Exclusive Payment Gateway."
+                    "Develop their website, created a CMS, Chat App exclusively for company, Some New-to-me Projects like Online Refund System and Exclusive Payment Gateway.",
+                    "Stack: PHP, MySql, Javascript, JQuery"
                 ]
             }
         ],

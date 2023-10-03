@@ -49,7 +49,7 @@
 		</template>
 
 		<!-- Menu -->
-		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block px-2 sm:px-4 py-2.5 fixed">
+		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-[rgba(255,255,255,.9)] block px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
 			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
@@ -84,6 +84,9 @@
 										<a x-bind:href="libraries.safeUrl(menu_item.href)" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
 									</li>
 								  </template>
+								  <li>
+									<a target="_blank" x-bind:href="external_links.resume" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page">Download Resume</a>
+								</li>
 							</ul>
 							<ul class="text-center menu-social">
 								<template x-for="social in menu.social">
@@ -105,30 +108,32 @@
 			<div class="md:col-span-3 px-5 md:px-3">
 				<div class="mt-[3em]">
                     <div class="mb-[3em] md:mb-[10em] w-full">
-						<div class="flex md:h-screen sm:h-auto">
+						<div class="flex sm:h-auto">
                             <div class="m-auto w-full">
                                 <!-- Name -->
                                 <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3rem] md:mt-[3rem]">
-                                    <span>Work Experience</span>
-                                    <span class="fa fa-magic align-middle"></span>
+                                    <span class="title-font text-gray-500">Work Experience</span>
+                                    <span class="fa fa-list-alt align-middle"></span>
                                 </h1>
 								<hr class="my-2 h-px border-dashed border-2 border-slate-300" />
-                                <div class="p-5 min-h-[100px] bg-[rgba(255,255,255,0.6)] border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(0,0,0,0.5)] text-center">
-                                    <template x-for="experience in experiences">
-                                        <div class="px-3 md:px-[2em] pb-[1em]">
-                                            <!-- Experiece -->
-											<h2 class="text-2xl text-left font-normal leading-normal mt-0 mb-2">
-                                                <span class="text-2xl" x-text="experience.company"></span>&nbsp;&bullet;&nbsp;
-                                                <span class="text-2xl" x-text="experience.type"></span>&nbsp;&bullet;&nbsp;
-                                                <span class="text-2xl" x-text="experience.time_frame"></span>
-											</h2>
-                                            <p x-html="`<span class='fa fa-map-pin text-gray-500'></span>&nbsp;${experience.location}`" class="text-left text-lg text-gray-500"></p>
-                                            <!-- Experience Description -->
-                                            <template x-for="list in experience.description">
-                                                <p x-html="`<span class='fa fa-minus text-gray-500'></span>&nbsp;` + list" class="text-left"></p>
-                                            </template>
-                                        </div>
-                                    </template>
+                                <div class="grid md:grid-cols-1 gap-3 text-gray-700">
+										<template x-for="experience in experiences">
+											<div class="p-5 min-h-[100px] bg-[rgba(255,255,255,0.6)] border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(0,0,0,0.5)] text-center">
+												<div class="px-3 md:px-[2em] pb-[1em]">
+													<!-- Experiece -->
+													<h2 class="text-2xl text-left font-normal leading-normal mt-0 mb-2">
+														<span class="text-2xl" x-text="experience.company"></span>&nbsp;&bullet;&nbsp;
+														<span class="text-2xl" x-text="experience.type"></span>&nbsp;&bullet;&nbsp;
+														<span class="text-2xl" x-text="experience.time_frame"></span>
+													</h2>
+													<p x-html="`<span class='fa fa-map-pin text-gray-500'></span>&nbsp;${experience.location}`" class="text-left text-lg text-gray-500"></p>
+													<!-- Experience Description -->
+													<template x-for="list in experience.description">
+														<p x-html="`<span class='fa fa-minus text-gray-500'></span>&nbsp;` + list" class="text-left" :class="{'text-amber-900': list.includes('Stack:')}"></p>
+													</template>
+												</div>
+											</div>
+										</template>
                                 </div>
                                 <!-- Social -->
                                 <div class="text-center">

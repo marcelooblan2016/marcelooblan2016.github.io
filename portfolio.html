@@ -49,7 +49,7 @@
 		</template>
 
 		<!-- Menu -->
-		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-transparent block px-2 sm:px-4 py-2.5 fixed">
+		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-[rgba(255,255,255,.9)] block px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
 			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
@@ -84,6 +84,9 @@
 										<a x-bind:href="libraries.safeUrl(menu_item.href)" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
 									</li>
 								  </template>
+								  <li>
+									<a target="_blank" x-bind:href="external_links.resume" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page">Download Resume</a>
+								  </li>
 							</ul>
 							<ul class="text-center menu-social">
 								<template x-for="social in menu.social">
@@ -109,7 +112,7 @@
                             <div class="m-auto w-full">
                                 <!-- Name -->
                                 <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-[3rem]">
-                                    <span>Portfolio</span>
+                                    <span class="title-font text-gray-500">Portfolio</span>
                                     <span class="fa fa-star-o align-middle"></span>
                                 </h1>
 								<hr class="my-2 h-px border-dashed border-2 border-slate-300" />
