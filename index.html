@@ -106,7 +106,7 @@
 		<div class="grid md:grid-cols-5 gap-1 text-gray-700">
 			<div class="md:col-span-1"></div>
 			<div class="md:col-span-3 px-5 md:px-3">
-				<div class="flex md:h-screen sm:h-auto">
+				<div class="flex  sm:h-auto">
                     <div class="m-auto">
 						<div class="flex flex-col justify-center items-center px-2 py-2 mt-[5em] md:mt-[4em]">
 							<img draggable="false" class="w-[150px] h-[150px] rounded-full ring-[1px] ring-gray-400 shadow-md" x-bind:src="profile_img" />
@@ -129,6 +129,13 @@
 								<h2 class="text-2xl text-center font-normal leading-normal mt-0 mb-2" x-text="person.title"></h2>
 								<!-- Summary -->
 								<p x-text="person.summary" class="p-5 text-justify"></p>
+								<p>
+									<span class="text-gray-500">Github Contributions</span>
+									&bullet;
+									<a target="_blank" x-bind:href="`${libraries.getGithubLink($data)}`" class="text-gray-600 text-sm font-bold underline inline-block">See Reference</a>
+								</p>
+								<hr class="my-2"/>
+								<img class="w-full h-auto" src="https://ghchart.rshah.org/marcelooblan2016" draggable="false"/>
 							</div>
 							<div class="text-center mt-[2em] md:mt-[3em] h-auto">
 								<a x-bind:href="libraries.safeUrl('portfolio')"class="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 border-b-4 border-gray-400 hover:border-gray-500 rounded block md:inline-block">
@@ -149,7 +156,7 @@
 								</a>
 							</div>
 							<!-- Social -->
-							<div class="text-center">
+							<div class="text-center mb-[20px]">
 								<ul class="text-center menu-social mt-[2em]">
 									<template x-for="social in menu.social">
 										<li class="inline p-2">

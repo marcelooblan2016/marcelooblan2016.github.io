@@ -1,6 +1,6 @@
 @import "./menu.css";
 @import "./animation.css";
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&family=Tilt+Neon&display=swap');
 
 #alpine-app {
     /* opacity: 0;
@@ -42,5 +42,6 @@
 }
 
 .title-font {
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
