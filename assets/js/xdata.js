@@ -5,7 +5,7 @@ function xData() {
             object_count: 50,
         },
         external_links: {
-            resume: "https://drive.google.com/file/d/19Zi_2ZM3Ik-2KBoa5_8SDd0CmWd_EZwf/view?usp=sharing"
+            resume: "https://drive.google.com/file/d/1eIDiy4mGxvVhrRBwCQWnTRnOxBTM1NSY/view?usp=sharing"
         },
         menu: {
             quote: "Keep Moving Forward!",
