@@ -33,9 +33,9 @@ function xData() {
         },
         person: {
             full_name: "Marcelo Oblan III",
-            title: "Fullstack Web Developer (Laravel | Vuejs | LAMP | TALL)",
+            title: "Fullstack Web Developer (Laravel | Vue.js | Inertia.js | LAMP | TALL)",
             summary: [
-                "I have been a web developer since 2012, specializing as a full-stack developer with extensive experience in diverse projects, including WiFi hotspots, payment gateways, online refund systems, eCommerce, and Software as a Service. My portfolio comprises a combination of freelance and full-time project-based roles.",
+                "I have been professionally engaged as a web developer since 2012, with a specialization in full-stack development. Over the years, I have cultivated extensive expertise by actively contributing to a diverse array of projects, encompassing various domains such as WiFi hotspots, online refund systems, eCommerce, and Software as a Service (SaaS) solutions. My portfolio is a testament to a rich and multifaceted experience, incorporating a blend of freelance and full-time project-based engagements.",
             ].join(","),
         },
         profile_img: "./assets/images/profile-picture-ph.jpg",
@@ -46,6 +46,7 @@ function xData() {
                     "Javascript", 
                     "JQuery",
                     "Vue.js / Vuex",
+                    "Inertia.js",
                     "Nuxt.js",
                     "Node.js",
                     "TypeScript",
@@ -111,7 +112,7 @@ function xData() {
                 title: "Software Engineer / FullStack",
                 description: [
                     "Develop a platform for purchasing and selling pre-owned vehicles on the internet. This project involves generating novel functionalities, ensuring smooth operation, resolving issues, and enhancing performance. The technology stack includes Laravel and Vue.js, and the final product will be deployed after completion.",
-                    "Stack: Laravel (elastic search), Vue.js / Vuex, Javascript, JQuery, MySql, Bootstrap, Sass/Scss, Envoyer, Wordpress (Sage root), Node.js, Stripe, Twilio, Git, LiquidWeb, Amazon: S3, CentOS"
+                    "Skills: Laravel (elastic search), Vue.js / Vuex, Javascript, JQuery, MySql, Bootstrap, Sass/Scss, Envoyer, Wordpress (Sage root), Node.js, Stripe, Twilio, Git, LiquidWeb, Amazon: S3, CentOS"
                 ]
             },
             {
@@ -122,7 +123,7 @@ function xData() {
                 title: "Laravel Web Developer",
                 description: [
                     "I collaborated with a team to develop an e-commerce website called CarsZoom, utilizing the Laravel framework. Additionally, I was involved in the development of the SDPHP blog website.",
-                    "Stack: Laravel, Vue.js, Javascript, JQuery, MySql, Bootstrap"
+                    "Skills: Laravel, Vue.js, Javascript, JQuery, MySql, Bootstrap"
                 ]
             },
             {
@@ -135,7 +136,7 @@ function xData() {
                     "I was part of a committed team working on the wifi project (Wifi Hotspots) for the client Globe.",
                     "We used the Agile method for development.",
                     "The project was primarily implemented in public areas such as malls, MRT/LRT stations, and airports. My role in the project was as a backend developer for the API.",
-                    "Stack: Laravel, Lumen, JQuery, MySql, Bootstrap"
+                    "Skills: Laravel, Lumen, JQuery, MySql, Bootstrap"
                 ]
             },
             {
@@ -148,7 +149,7 @@ function xData() {
                     "Company started from 4 people to more than 50 people.",
                     "One of the 4 people as a web developer. In mid 2015 , I have become a Team Leader of the team.",
                     "Develop their website, created a CMS, Chat App exclusively for company, Some New-to-me Projects like Online Refund System and Exclusive Payment Gateway.",
-                    "Stack: PHP, MySql, Javascript, JQuery"
+                    "Skills: PHP, MySql, Javascript, JQuery"
                 ]
             }
         ],
@@ -193,6 +194,30 @@ function xData() {
         portfolios: [
             {
                 "shown": false,
+                "title": "Filechamp.io",
+                "slug": "filechamp-io",
+                "description": "An online file conversion and optimization tool that makes it easy to convert documents and images to various formats. You can resize images before converting them and process multiple files at once. The platform also allows you to download all your converted files together in a zip archive. With an intuitive interface and a focus on user privacy.",
+                "date_from": "09-01-2023",
+                "date_to": "present",
+                "status": "active",
+                "url": "https://filechamp.io/",
+                "tech_used": [
+                    "Laravel",
+                    "Vue.js",
+                    "Tailwindcss",
+                    "Inertia.js",
+                    "Github Actions: CI / CD",
+                    "Digital Ocean",
+                    "Namecheap"
+                ],
+                "photos": [
+                    {"url": "filechamp.io/front.webp",  "front": true}
+                ],
+                "order": null,
+                "is_display": true
+            },
+            {
+                "shown": false,
                 "title": "Paralanx.com",
                 "slug": "paralanx-dot-com",
                 "description": "all-in-one website, featuring a diverse range of integrated tools such as paraphraser, grammar fixer, and summarizer, all powered by ChatGPT. Enhance your blogging experience with its custom-built CMS, optimized with GPT technology for seamless blog creation",
@@ -201,7 +226,7 @@ function xData() {
                 "status": "active",
                 "url": "https://paralanx.com",
                 "tech_used": [
-                    "Tailwind",
+                    "Tailwindcss",
                     "Alpine.js",
                     "Laravel",
                     "Livewire",
