@@ -1,6 +1,6 @@
 @import "./menu.css";
 @import "./animation.css";
-@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Roboto&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 #alpine-app {
     /* opacity: 0;
@@ -41,7 +41,6 @@
     left: 50%;
 }
 
-.title-font {
+html, body, * {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }
