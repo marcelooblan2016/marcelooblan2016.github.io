@@ -39,6 +39,13 @@ function xData() {
             ].join(","),
         },
         profile_img: "./assets/images/profile-picture-ph.jpg",
+        testimonials: [
+            {name: 'Teresa W.', position: 'Owner, 01Hearts', message: '"Marcelo is an excellent software engineer, proficient in many full-stack developer technologies. If he doesn\'t know a new language, app, or technology, he learns it. He is reliable and available if we have an urgent update. Marcelo asks the right questions to clarify new assignments or tasks, which results in finishing as expected the first time. He\'s great about using our development tools and Agile methods. He\'s a good listener, collaborates well with me and others, and has excellent troubleshooting skills. Marcelo helped us with the allcars and Neurosig startups. What I like most about Marcelo is that he is fun to work with. I am confident Marcelo would do a great job with any project or job he signs up for."'},
+            {name: 'Fheter John C.', position: 'CTO | Business Analyst | Product Manager | Scrum M', message: '"I hired Marcelo as a Contract Fullstack Website Developer, He showcased exceptional skills in PHP, Laravel, Vue.js, and Postgre while working on the WildAlert project for our client, DENR Philippines, at IT-Era Technology Solutions. Marcelo\'s technical prowess played a pivotal role in the project\'s success. He consistently demonstrated a commitment to excellence, swiftly tackling complex challenges, and maintaining open communication with our team and the client. Marcelo\'s contributions were instrumental in the nationwide rollout of WildAlert, a vital tool for DENR rangers combatting illegal wildlife trading. He is a valuable asset to any web development project and consistently goes above and beyond to deliver exceptional results. "'},
+            {name: 'Dan S.', position: 'Partner at Arcadia Consulting | Driving Behavioral', message: '"Marcelo is highly responsive, technically skilled and creative in his solutions. I hired Marcelo for a complex responsive website design and he exceeded my expectations, bringing a level of sophistication that was impressive. I highly recommend Marcelo. "'},
+            {name: 'Matt J.', position: '', message: '"Marcelo is very knowledgeable. Communication was never a problem. He’s very responsive and by far one of the best developers I’ve worked with in the past. All tasks were completed as required and I am looking forward to working with him on projects in the future!"'},
+        ],
+        testimonial_current: 0,
         skills: [
             {
                 type: "Front-End",

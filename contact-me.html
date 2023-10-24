@@ -7,17 +7,17 @@
     <!-- Meta description -->
     <meta name="description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
     <!-- FB -->
-	<meta property="og:url" content="https://marcelooblan2016.github.io/contact-me">
+	<meta property="og:url" content="https://marcelooblan2016.github.io/skills">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Contact | Marcelo Oblan">
+    <meta property="og:title" content="Skills | Marcelo Oblan">
     <meta property="og:description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
-    <meta property="og:image" content="https://marcelooblan2016.github.io/assets/images/profile_picture.jpg">
-    <meta property="og:image:url" content="https://marcelooblan2016.github.io/assets/images/profile_picture.jpg">
-    <meta property="og:image:secure_url" content="https://marcelooblan2016.github.io/assets/images/profile_picture.jpg">
+    <meta property="og:image" content="https://marcelooblan2016.github.io/assets/images/profile-seo.jpg">
+    <meta property="og:image:url" content="https://marcelooblan2016.github.io/assets/images/profile-seo.jpg">
+    <meta property="og:image:secure_url" content="https://marcelooblan2016.github.io/assets/images/profile-seo.jpg">
     <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:site_name" content="Contact Me | Marcelo Oblan">
+    <meta property="og:site_name" content="Skills | Marcelo Oblan">
     <!-- Twitter -->
-    <meta property="twitter:title" content="Contact Me | Marcelo Oblan">
+    <meta property="twitter:title" content="Skills | Marcelo Oblan">
     <meta property="twitter:description" content="Software engineer / Fullstack web developer (Laravel | Vuejs | LAMP)">
     <meta property="twitter:card" content="summary_large_image">
     <!-- SEO End -->
@@ -33,9 +33,12 @@
   <style>
 	[x-cloak] { display: none !important; }
   </style>
-  <body class="bg-gray-900 h-auto scroll-smooth">
+  <body class="h-auto scroll-smooth">
 	<!-- gray-900 -->
     <div id="alpine-app" x-data="xData" x-cloak>
+		<div id="modal-init">
+			<i class="fa fa-cog fa-spin text-white text-4xl loader" aria-hidden="true"></i>
+		</div>
 	    <!-- Animations-->
 		<template x-teleport="body">
 			<ul class="circles">
@@ -48,9 +51,9 @@
 		<!-- Menu -->
 		<nav class="w-full bg-[rgba(0,0,0,.8)] md:bg-[rgba(255,255,255,.9)] block px-2 sm:px-4 py-2.5 fixed">
 			<div class="container flex flex-wrap justify-between items-center mx-auto w-full">
-			    <a x-bind:href="libraries.safeUrl('index')"  class="flex items-center">
+			    <a x-bind:href="libraries.safeUrl('index')" class="flex items-center">
 				    <img x-bind:src="menu.favicon" class="mr-3 h-6 sm:h-9" alt="Marx Logo" />
-				    <span class="text-gray-100" x-text="menu.quote"></span>
+				    <span class="text-gray-400" x-text="menu.quote"></span>
 			    </a>
 				<template x-if="menu.is_open == false">
 					<button data-collapse-toggle="navbar-default" type="button" 
@@ -59,7 +62,7 @@
 					@click.prevent="menu.is_open = true;"
 					>
 						<span class="sr-only">Open main menu</span>
-						<svg class="w-6 h-6 text-white" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+						<svg class="w-6 h-6 text-white md:text-black" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
 				    </button>
                 </template>
 				<template x-if="menu.is_open == true">
@@ -81,6 +84,9 @@
 										<a x-bind:href="libraries.safeUrl(menu_item.href)" x-text="menu_item.text" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page"></a>
 									</li>
 								  </template>
+								  <li>
+									<a target="_blank" x-bind:href="external_links.resume" class="block py-2 pr-4 pl-3 text-gray-800 hover:text-gray-900" aria-current="page">Download Resume</a>
+								  </li>
 							</ul>
 							<ul class="text-center menu-social">
 								<template x-for="social in menu.social">
@@ -97,27 +103,23 @@
 			</div>
 		</nav>
 		<!-- Content-->
-		<div class="grid md:grid-cols-5 gap-1 text-white">
+		<div class="grid md:grid-cols-5 gap-1 text-gray-700">
 			<div class="md:col-span-1"></div>
 			<div class="md:col-span-3 px-5 md:px-3">
 				<div class="mt-[3em]">
                     <div class="mb-[2em] w-full">
-						<div class="flex md:h-screen sm:h-auto">
+						<div class="flex sm:h-auto">
                             <div class="m-auto w-full">
                                 <!-- Name -->
-                                <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3em] md:mt-0">
-                                    <span>Ways to Contact Me</span>
-                                    <span class="fa fa-mobile align-middle"></span>
+                                <h1 class="text-4xl text-center font-normal leading-normal mb-2 mt-[3rem] md:mt-[3rem]">
+                                    <span class="title-font text-gray-500">Contact Me</span>
+                                    <span class="fa fa-phone-square align-middle"></span>
                                 </h1>
-                                <hr class="my-2 h-px bg-gray-300 border-0" />
-                                <div class="p-5 min-h-[100px] bg-transparent border border-2 border-gray-100] border-3 rounded-md shadow-[10px_10px_0px_0px_rgba(255,255,255,0.7)] text-center">
-                                            <!-- Email Address -->
-                                            <h2 class="text-2xl text-left font-normal leading-normal" x-text="skill.type"></h2>
-                                            <!-- Skill Details -->
-                                            <!-- <template x-for="list in skill.lists">
-                                                <p x-html="`<span class='fa fa-check text-green-500'></span>&nbsp;` + list" class="text-left"></p>
-                                            </template> -->
-                                </div>
+								<hr class="my-2 h-px border-dashed border-2 border-slate-300" />
+								<div class="grid md:grid-cols-1 gap-3 text-gray-700">
+									<embed src="https://tally.so/r/3jogMY" class="block w-full min-h-[800px]">
+							    </div>
+
                                 <!-- Social -->
                                 <div class="text-center">
                                     <ul class="text-center menu-social mt-[2em]">
@@ -138,8 +140,8 @@
 			<div class="md:col-span-1"></div>
 		</div>
 		<!-- Footer -->
-		<footer class="p-4 text-white bg-black">
-			<span class="block text-sm text-white text-center">
+		<footer class="p-4 text-gray-400 bg-slate-100 border-t-[1px] border-gray-300 block">
+			<span class="block text-sm text-center">
 				© <span x-text="footer.year"></span>. All Rights Reserved.
 			</span>
 		</footer>
